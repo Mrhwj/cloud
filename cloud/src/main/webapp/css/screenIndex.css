@@ -1,0 +1,5116 @@
+@font-face {
+    font-family: 'pmzd';
+    src: url('../font/pmzd.ttf');
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../imgs/mainBg.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.onMainTop {
+    width: 100%;
+    height: 2.44rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(../imgs/mainBgTop.png) no-repeat center center;
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+.loginBg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding-top: 2rem;
+}
+
+.loginPanel {
+    position: relative;
+    width: 10.84rem;
+    height: 6.66rem;
+    background: url(../imgs/loginPanelBg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.loginPanel>div {
+    width: 6rem;
+    height: 0.87rem;
+    background-color: rgba(2, 14, 73, 0.64);
+    border-radius: 0.1rem;
+    box-shadow: inset 0 0 0.2rem 0.05rem rgba(79, 172, 254, 0.5);
+    padding: 0 0.36rem;
+    margin-bottom: 0.49rem;
+}
+
+.loginPanel>div img {
+    width: 0.42rem;
+    height: 0.48rem;
+    margin-right: 0.4rem;
+}
+
+.loginPanel>div input {
+    font-size: 0.33rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+}
+
+#code {
+    width: 100%;
+}
+
+.code {
+    cursor: pointer;
+    width: 2rem;
+    height: 0.87rem;
+    line-height: 0.87rem;
+    background: #4facfe;
+    border-radius: 0.1rem;
+    text-align: center;
+    font-size: 0.43rem;
+    color: rgba(2, 14, 73, 1);
+}
+
+.loginBtn {
+    width: 6rem;
+    height: 0.87rem;
+    background-image: linear-gradient(-87deg,
+            rgba(0, 242, 254, 1) 0%,
+            rgba(79, 172, 254, 1) 100%),
+        linear-gradient(rgba(2, 14, 73, 1),
+            rgba(2, 14, 73, 1));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    color: rgba(2, 14, 73, 1);
+    font-size: 0.4rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.87rem;
+    margin-bottom: 0 !important;
+    cursor: pointer;
+}
+
+.indexNavBg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding-top: 1.5rem;
+}
+
+.indexPanel {
+    background: url(../imgs/indexNavBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    width: 17.52rem;
+    height: 8.1rem;
+    padding: 1rem 2.17rem 0;
+}
+
+.indexPanel>div>img {
+    width: 3.11rem;
+    height: 3.11rem;
+    transition: all 0.5s;
+}
+
+.indexPanel>div>span {
+    font-size: 0.46rem;
+    color: rgba(0, 186, 255, 1);
+    font-family: 'pmzd';
+    margin-top: 0.38rem;
+    transition: all 0.5s;
+}
+
+.indexPanel>div {
+    cursor: pointer;
+    position: relative;
+}
+
+.indexPanel>div:hover>img {
+    opacity: 0;
+}
+
+.indexPanel>div:hover>span {
+    margin-top: 1rem;
+    color: rgba(167, 245, 250, 1);
+}
+
+.indexPanel>div .hoverShow {
+    opacity: 0;
+    position: absolute;
+    width: 7rem;
+    height: 5.11rem;
+    left: -1.945rem;
+    bottom: 1rem;
+    background: url(../imgs/idnexNav_paoBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.indexPanel>div:hover>.hoverShow {
+    opacity: 1;
+    display: block;
+}
+
+.indexPanel>div .hoverShow img:nth-child(1) {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 2.27rem;
+    left: 2.74rem;
+    animation: indexNav1 1s infinite linear alternate;
+}
+
+@keyframes indexNav1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0.15rem);
+    }
+}
+
+@keyframes indexNav2 {
+    0% {
+        transform: translateY(0.15rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.indexPanel>div .hoverShow img:nth-child(2) {
+    width: 1.2rem;
+    height: 1.17rem;
+    top: 0.19rem;
+    left: 2.39rem;
+    position: absolute;
+    animation: indexNav2 2s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow img:nth-child(3) {
+    width: 1.19rem;
+    height: 1.17rem;
+    top: 0.65rem;
+    left: 3.79rem;
+    position: absolute;
+    animation: indexNav2 1s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow img:nth-child(4) {
+    width: 1.19rem;
+    height: 1.17rem;
+    top: 1.48rem;
+    left: 1.62rem;
+    position: absolute;
+    animation: indexNav1 2s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow img:nth-child(5) {
+    width: 1.19rem;
+    height: 1.17rem;
+    top: 1.86rem;
+    left: 4.43rem;
+    position: absolute;
+    animation: indexNav1 2s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow img:nth-child(6) {
+    width: 0.77rem;
+    height: 0.76rem;
+    top: 0rem;
+    left: 4.81rem;
+    position: absolute;
+    animation: indexNav2 1s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow img:nth-child(7) {
+    width: 0.59rem;
+    height: 0.59rem;
+    top: 0.58rem;
+    left: 1.58rem;
+    position: absolute;
+    animation: indexNav1 2s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow img:nth-child(8) {
+    width: 1.19rem;
+    height: 1.17rem;
+    top: 0.35rem;
+    left: 1.1rem;
+    position: absolute;
+    animation: indexNav1 3s infinite linear alternate;
+}
+
+.loginAni-leave-active {
+    animation: bounceOutDown 0.5s;
+}
+
+.loginAni-enter-active {
+    animation: bounceInUp 0.5s;
+}
+
+.indexNavAni-leave-active {
+    animation: bounceOut 0.5s;
+}
+
+.indexNavAni-enter-active {
+    animation: bounceIn 0.5s;
+}
+
+.basicDataBg,
+.partyLeaderBg,
+.SmartUseBg {
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.basicLeftPanel {
+    position: absolute;
+    left: 0.31rem;
+    top: 2.37rem;
+    width: 6.13rem;
+    height: 8.19rem;
+    background: url(../imgs/gridLeftPanel.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.basicLeftPanel img {
+    width: 100%;
+    margin-bottom: 0.1rem;
+}
+
+.basicleftTitle {
+    font-size: 0.25rem;
+    background: linear-gradient(to bottom, #bcf4ff, #1b4fa8);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: -0.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.basicLeftPanel .title {
+    font-size: 0.25rem;
+    color: rgba(98, 196, 218, 1);
+    text-align: center;
+    font-weight: bold;
+}
+
+.basicLeftPanel {
+    padding: 0 0.4rem 0.45rem;
+}
+
+.basicLeftPanel .content {
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+    line-height: 2em;
+    text-align: justify;
+
+}
+
+.basicLeftPanel .content p {
+    text-indent: 2em;
+}
+
+.cityInfo {
+    overflow-y: auto;
+    height: 6.3rem;
+    padding: 0 0.1rem;
+    margin-top: 0.2rem;
+}
+
+::-webkit-scrollbar {
+    width: 0.17rem;
+    height: 0.17rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0.09rem;
+    background: rgba(98, 196, 218, 1);
+}
+
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    border-radius: 0.1rem;
+    background: rgba(98, 196, 218, 0.3);
+}
+
+.amap-logo,
+.amap-copyright {
+    display: none !important;
+}
+
+.basicLeftPanel .cityInfo table {
+    width: 100%;
+}
+
+.basicLeftPanel .cityInfo table td {
+    padding-top: 0.2rem;
+}
+
+.basicLeftPanel .cityInfo table td:nth-child(1) {
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+    width: 1.2rem;
+}
+
+.basicLeftPanel .cityInfo table td:nth-child(2) {
+    font-size: 0.2rem;
+    color: rgba(98, 196, 218, 1);
+}
+
+.villageTabs span {
+    width: 1.27rem;
+    height: 0.33rem;
+    background-color: rgba(98, 196, 218, 0.2);
+    border-radius: 0.05rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 0.33rem;
+    cursor: pointer;
+    color: #24dedf;
+    font-size: 0.22rem;
+}
+
+.villageTabs span:nth-child(1) {
+    margin-right: 0.08rem;
+}
+
+.villageTabs span.active {
+    background-image: linear-gradient(-69deg,
+            rgba(0, 242, 254, 0.8) 0%,
+            rgba(79, 172, 254, 0.8) 100%),
+        linear-gradient(rgba(98, 196, 218, 0.8),
+            rgba(98, 196, 218, 0.8));
+    background-blend-mode: normal,
+        normal;
+    color: #333;
+}
+
+.villageGridTop span:nth-child(1),
+.villageGridTop span:nth-child(3) {
+    width: 1.5rem;
+    height: 0.46rem;
+    background-color: rgba(60, 145, 167, 0.55);
+    border-radius: 0.05rem;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.46rem;
+    color: rgba(98, 196, 218, 1);
+}
+
+.villageGridTop span:nth-child(2),
+.villageGridTop span:nth-child(4) {
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.villageGridTop {
+    padding-top: 0.2rem;
+}
+
+.villageGridTableTabs {
+    padding-top: 0.5rem;
+    border-bottom: 0.02rem solid rgba(98, 196, 218, 0.1);
+}
+
+.villageGridTableTabs span {
+    font-size: 0.18rem;
+    color: rgba(72, 139, 158, 1);
+    padding-bottom: 0.18rem;
+    position: relative;
+    cursor: pointer;
+    top: 0.02rem;
+}
+
+.villageGridTableTabs span:nth-child(1) {
+    margin-right: 0.5rem;
+}
+
+.villageGridTableTabs span.active {
+    color: rgba(98, 196, 218, 1);
+    border-bottom: 0.02rem solid rgba(98, 196, 218, 1);
+}
+
+.villageGridtable {
+    height: 4.88rem;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* 
+.villageGridtable table {
+    width: 100%;
+}
+
+.villageGridtable th {
+    background: #0d2e59;
+    height: 0.4rem;
+    font-size: 0.18rem;
+    color: rgba(224, 225, 225, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.villageGridtable table tbody td {
+    font-size: 0.18rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 0.17rem 0.1rem;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.16);
+}
+
+.villageGridtableThead div {
+    text-align: center;
+}
+
+.villageGridtableThead {
+    margin-top: 0.3rem;
+    font-size: 0.18rem;
+    color: rgba(99, 196, 218, 0.41);
+    text-align: center;
+}
+
+.villageGridtableThead div:nth-child(1) {
+    width: 1.5rem;
+    text-align: center;
+}
+
+.villageGridtableThead div:nth-child(2) {
+    width: 1.3rem;
+    text-align: center;
+} */
+
+.basicLeftPanel-enter-active {
+    animation: bounceInLeft 0.5s;
+}
+
+.basicLeftPanel-leave-active {
+    animation: bounceOutLeft 0.5s;
+}
+
+.basicRightPanel-enter-active {
+    animation: bounceInRight 0.5s;
+}
+
+.basicRightPanel-leave-active {
+    animation: bounceOutRight 0.5s;
+}
+
+.map-enter-active {
+    animation: fadeIn 1s;
+}
+
+.map-leave-active {
+    animation: fadeOut 1s;
+}
+
+.basicRightPanel {
+    width: 5.11rem;
+    height: 8.13rem;
+    background: url(../imgs/gridRightPanel.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 13.77rem;
+    top: 2.4rem;
+}
+
+.backBtn {
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 1.09rem;
+    height: 0.37rem;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.basicRightPanel {
+    padding: 0.2rem 0 0.33rem 0.33rem;
+}
+
+.basicRightPanel .rightList>div {
+    width: 4.45rem;
+    height: 1.39rem;
+    background-color: rgba(60, 145, 167, 0.1);
+    border-radius: 0.05rem;
+    margin-bottom: 0.11rem;
+    padding: 0.17rem 0.11rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.basicRightPanel .rightList {
+    overflow-y: auto;
+}
+
+.basicRightPanel .rightList>div>div:nth-child(1) {
+    font-size: 0.25rem;
+    color: rgba(98, 196, 218, 1);
+    font-weight: bold;
+}
+
+.basicRightPanel .rightList>div>div:nth-child(1).active {
+    font-size: 0.45rem;
+    color: rgba(98, 196, 218, 1);
+    font-weight: bold;
+    height: 100%;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.basicRightPanel .rightList>div>div:nth-child(2) {
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+    text-indent: 2em;
+    line-height: 2em;
+    text-align: justify;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.rightPanelBack {
+    padding-bottom: 0.2rem;
+    height: 0.61rem;
+}
+
+.rightPanelBack img {
+    width: 1.11rem;
+    height: 0.41rem;
+    cursor: pointer;
+}
+
+.indexPanel>div .hoverShow.two img:nth-child(1) {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 2.27rem;
+    left: 2.74rem;
+    animation: indexNav1 1s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow.two img:nth-child(2) {
+    width: 1.2rem;
+    height: 1.17rem;
+    top: 0.09rem;
+    left: 1.44rem;
+    position: absolute;
+    animation: indexNav2 2s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow.two img:nth-child(3) {
+    width: 1.19rem;
+    height: 1.17rem;
+    top: 0.16rem;
+    left: 4.53rem;
+    position: absolute;
+    animation: indexNav2 1s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow.two img:nth-child(4) {
+    width: 1.2rem;
+    height: 1.17rem;
+    top: 0.56rem;
+    left: 2.9rem;
+    position: absolute;
+    animation: indexNav2 2s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow.two img:nth-child(5) {
+    width: 1.19rem;
+    height: 1.17rem;
+    top: 1.49rem;
+    left: 4.26rem;
+    position: absolute;
+    animation: indexNav2 1s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow.two img:nth-child(6) {
+    width: 1.2rem;
+    height: 1.17rem;
+    top: 1.53rem;
+    left: 1.6rem;
+    position: absolute;
+    animation: indexNav2 2s infinite linear alternate;
+}
+
+.indexPanel>div .hoverShow.two img:nth-child(7) {
+    width: 0.59rem;
+    height: 0.59rem;
+    top: -0.3rem;
+    left: 3.71rem;
+    position: absolute;
+    animation: indexNav2 1s infinite linear alternate;
+}
+
+.gridInfoBg,
+.rankBg,
+.orgInfoBg,
+.eventStatisticsBg,
+.smartActivityContentBg,
+.eventInfobg,
+.flowBg,
+.peopleServiseInfoBg,
+.EvaRoleBg,
+.spotRecordTineLineBg,
+.iSelectStarBg,
+.videoInfoBg,
+.meetChatBg,
+.meetChatAddBg,
+.videoNoHas,
+.villagePeopleBg,
+.event7dayListBg,
+.orgInfoActDayBg,
+.lookFileInfoBg,
+.basicEventChart2ListBg,
+.warningBg,
+.BmfwStcListBg,
+.PartyPieChartInfoBg,
+.gridFrameWorkBg,
+.frameWorkVillageBg {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.orgInfoBg {
+    z-index: 6;
+}
+
+.orgInfoActDayBg {
+    z-index: 7;
+}
+
+.lookFileInfoBg {
+    z-index: 9;
+}
+
+.gridInfoPanel {
+    background: url(../imgs/gridShowPanel.png) no-repeat center center;
+    background-size: 100% 100%;
+    width: 14.99rem;
+    height: 7.24rem;
+}
+
+.gridInfoPanel-enter-active {
+    animation: bounceIn 0.5s;
+}
+
+.gridInfoPanel-leave-active {
+    animation: bounceOut 0.5s;
+}
+
+.gridInfoPanel {
+    padding: 0.44rem 1.2rem;
+}
+
+.gridInfoPanel>div:nth-child(2) {
+    text-align: center;
+    color: rgba(36, 222, 223, 1);
+    font-size: 0.3rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    padding-bottom: 0.32rem;
+}
+
+.gridInfoTable {
+    width: 100%;
+    font-size: 0.22rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.gridInfoTable td {
+    padding: 0.2rem;
+}
+
+.gridInfoTable span {
+    font-size: 0.22rem;
+    color: rgba(36, 222, 223, 1);
+}
+
+.personInfo {
+    padding-right: 0.1rem;
+    overflow-y: auto;
+}
+
+.personInfo table {
+    width: 100%;
+}
+
+.personInfo th {
+    background-color: #0d2e59;
+    color: rgba(224, 225, 225, 0.6);
+    font-size: 0.18rem;
+    height: 0.73rem;
+    position: sticky;
+    top: 0;
+}
+
+
+.personInfo td {
+    font-size: 0.18rem;
+    color: rgba(232, 232, 232, 1);
+    text-align: center;
+    padding: 0.1rem;
+    border-top: 0.03rem solid #0d2e59;
+}
+
+.personInfo td img {
+    width: 0.17rem;
+    height: 0.17rem;
+    margin-left: 0.1rem;
+}
+
+.personInfo td:nth-child(2n-1) {
+    background-color: rgba(39, 105, 150, 0.8);
+}
+
+.personInfo td:nth-child(2n) {
+    background-color: rgba(39, 105, 150, 0.55);
+}
+
+.partySelect {
+    text-align: center;
+    height: 0.40rem;
+    background-color: rgba(61, 128, 159, 1);
+    background-image: linear-gradient(-82deg,
+            rgba(32, 156, 255, 0.8) 0%,
+            rgba(104, 224, 207, 0.8) 100%),
+        linear-gradient(rgba(98, 196, 218, 0.8),
+            rgba(98, 196, 218, 0.8));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.2rem;
+    font-size: 0.2rem;
+    color: rgba(12, 34, 96, 1);
+    padding: 0 0.3rem;
+    position: absolute;
+    left: 0.65rem;
+    top: 0.64rem;
+    border: 0;
+}
+
+.partySelect div {
+    white-space: nowrap;
+
+}
+
+.partySelect div.active span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.partyLeaderChart,
+.basicEventChart {
+    width: 4.31rem;
+    height: 2.73rem;
+    background: url(../imgs/mapChartBg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#partyLeaderChart1,
+#basicEventChart1 {
+    position: absolute;
+    top: 2.03rem;
+    left: 0.3rem;
+}
+
+#partyLeaderChart2,
+#basicEventChart2 {
+    position: absolute;
+    top: 4.94rem;
+    left: 0.3rem;
+}
+
+#partyLeaderChart3,
+#basicEventChart3 {
+    position: absolute;
+    top: 7.85rem;
+    left: 0.3rem;
+}
+
+#partyLeaderChart4,
+#basicEventChart4 {
+    position: absolute;
+    top: 2.03rem;
+    left: 14.62rem;
+}
+
+#partyLeaderChart5,
+#basicEventChart5 {
+    position: absolute;
+    top: 4.94rem;
+    left: 14.62rem;
+}
+
+#partyLeaderChart6,
+#basicEventChart6 {
+    position: absolute;
+    top: 7.85rem;
+    left: 14.62rem;
+}
+
+.partyLeaderChartSelect {
+    height: 0.23rem;
+    background-color: rgba(61, 128, 159, 1);
+    border-radius: 0.1rem;
+    font-size: 0.12rem;
+    color: rgba(61, 191, 191, 1);
+    border: 0;
+    position: absolute;
+    padding: 0 0.05rem;
+}
+
+.partyLeaderChart1Select {
+    top: 2.35rem;
+    left: 3.5rem;
+}
+
+.partyLeaderChart2Select {
+    top: 5.26rem;
+    left: 3.7rem;
+}
+
+
+.partyLeaderNumber {
+    position: absolute;
+    top: 2.03rem;
+    left: 7.6rem;
+    width: 4rem;
+}
+
+.partyLeaderNumber>div {
+    width: 1.88rem;
+    height: 1.14rem;
+    background: url(../imgs/numberBg.png) no-repeat center center;
+    background-size: 100% 100%;
+
+}
+
+.partyLeaderNumber>div>div:nth-child(1) {
+    font-size: 0.25rem;
+    color: rgba(202, 111, 67, 1);
+    margin-bottom: 0.1rem;
+}
+
+.partyLeaderNumber>div>div:nth-child(2) {
+    font-size: 0.16rem;
+    color: rgba(223, 223, 223, 1);
+}
+
+.orgRankPanel,
+.partyRankPanel {
+    width: 13.89rem;
+    height: 9rem;
+    background: url(../imgs/rankbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 0.5rem 0.5rem;
+    position: relative;
+}
+
+.partyRankBtns {
+    position: absolute;
+    top: 9.39rem;
+    left: 6.6rem;
+    width: 6rem;
+}
+
+.partyRankBtns img {
+    width: 0.82rem;
+    height: 0.96rem;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    box-shadow: 0 0 0.15rem 0.05rem rgba(13, 161, 245, 1);
+}
+
+.partyRankBtns img:hover {
+    box-shadow: 0 0 0.3rem 0.1rem rgba(13, 161, 245, 1);
+}
+
+.orgRankPanel>div:nth-child(1),
+.partyRankPanel>div:nth-child(1) {
+    font-size: 0.3rem;
+    color: #24dedf;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    padding-bottom: 0.32rem;
+    text-align: center;
+}
+
+.orgRankPanel>div:nth-child(2),
+.partyRankPanel>div:nth-child(2) {
+    padding-right: 0.1rem;
+    overflow-y: auto;
+    margin-top: 0.2rem;
+}
+
+.orgRankPanel>div:nth-child(2) table,
+.partyRankPanel>div:nth-child(2) table {
+    width: 100%;
+}
+
+/* .orgRankPanel>div:nth-child(2) table th div,
+.partyRankPanel>div:nth-child(2) table th div {
+    border-right: 0.03rem solid #0c183e;
+    height: 100%;
+} */
+
+.orgRankPanel>div:nth-child(2) tr:nth-child(1) th,
+.partyRankPanel>div:nth-child(2) tr:nth-child(1) th {
+    background: #0d2e59;
+    height: 0.56rem;
+    font-size: 0.18rem;
+    color: rgba(224, 225, 225, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    border-right: 0.03rem solid #0c183e;
+}
+
+.orgRankPanel>div:nth-child(2) tr:nth-child(1) th:last-child,
+.partyRankPanel>div:nth-child(2) tr:nth-child(1) th:last-child {
+    border-right: none;
+}
+
+.orgRankPanel>div:nth-child(2) tr:nth-child(2) th,
+.partyRankPanel>div:nth-child(2) tr:nth-child(2) th {
+    background: #0d2e59;
+    height: 0.56rem;
+    font-size: 0.18rem;
+    color: rgba(224, 225, 225, 0.6);
+    position: sticky;
+    top: 0.56rem;
+    z-index: 3;
+}
+
+.orgRankPanel>div:nth-child(2) tr:nth-child(2) th:nth-child(5),
+.orgRankPanel>div:nth-child(2) tr:nth-child(2) th:nth-child(8),
+.orgRankPanel>div:nth-child(2) tr:nth-child(2) th:nth-child(10),
+.partyRankPanel>div:nth-child(2) tr:nth-child(2) th:nth-child(5),
+.partyRankPanel>div:nth-child(2) tr:nth-child(2) th:nth-child(8),
+.partyRankPanel>div:nth-child(2) tr:nth-child(2) th:nth-child(10) {
+    border-right: 0.03rem solid #0c183e;
+}
+
+.orgRankPanel>div:nth-child(2) .RankListOut,
+.partyRankPanel>div:nth-child(2) .RankListOut {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.orgRankPanel>div:nth-child(2) td,
+.partyRankPanel>div:nth-child(2) td {
+    color: rgba(232, 232, 232, 1);
+    font-size: 0.18rem;
+    text-align: center;
+    padding: 0.2rem 0.1rem;
+    border: 0.03rem solid #0c183e;
+}
+
+.orgRankPanel>div:nth-child(2) td:last-child,
+.partyRankPanel>div:nth-child(2) td:last-child {
+    border-right: none;
+}
+
+.orgRankPanel>div:nth-child(2) td:first-child,
+.partyRankPanel>div:nth-child(2) td:first-child {
+    border-left: none;
+}
+
+.orgRankPanel>div:nth-child(2) tr:nth-child(2n-1) td,
+.partyRankPanel>div:nth-child(2) tr:nth-child(2n-1) td {
+    background: rgba(39, 105, 150, 0.8);
+}
+
+.orgRankPanel>div:nth-child(2) tr:nth-child(2n) td,
+.partyRankPanel>div:nth-child(2) tr:nth-child(2n) td {
+    background: rgba(39, 105, 150, 0.55);
+}
+
+.orgInfoPanel {
+    width: 17.76rem;
+    height: 8.63rem;
+    background: url(../imgs/orgInfoBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.orgInfoPanel {
+    padding: 0.44rem 1.1rem 0.6rem;
+}
+
+.orgInfo .title {
+    text-align: center;
+    font-size: 0.3rem;
+    color: rgba(36, 222, 223, 1);
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    padding-bottom: 0.32rem;
+    position: relative;
+}
+
+.orgInfo .title span {
+    font-size: 0.22rem;
+    font-weight: normal;
+    color: rgba(36, 222, 223, 1);
+    position: absolute;
+    right: 1.42rem;
+    bottom: 0.32rem;
+}
+
+.orgInfo .title span i {
+    font-style: normal;
+    color: #fff;
+}
+
+.littleTitle {
+    font-size: 0.2rem;
+    color: rgba(36, 222, 223, 1);
+    padding: 0.2rem 0;
+}
+
+.introduce {
+    width: 5.59rem;
+    height: 7rem;
+}
+
+.introduce img {
+    width: 5.59rem;
+    /* height: 2.56rem; */
+    border-radius: 0.1rem;
+}
+
+.introduce .content {
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5em;
+    margin: 0.2rem 0;
+    overflow-y: auto;
+}
+
+.introduce .content p {
+    text-indent: 2em;
+}
+
+.address {
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.partyClassList {
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.partyClassList {
+    width: 3rem;
+}
+
+.partyClassList div {
+    margin-bottom: 0.1rem;
+}
+
+
+.partyClass {
+    padding: 0 1.3rem;
+}
+
+.activitySelect {
+    width: 1.55rem;
+    height: 0.45rem;
+    background-color: #0d2e59;
+    border-radius: 0.1rem;
+    font-size: 0.2rem;
+    color: rgba(0, 217, 234, 1);
+    border: none;
+    padding-left: 0.1rem;
+}
+
+.activityList {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 6rem;
+    padding-left: 0.2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.activityList>div {
+    position: relative;
+    border-left: 0.02rem solid rgba(255, 255, 255, 0.53);
+}
+
+.activityList>div:last-child {
+    border: none;
+    height: 0.3rem;
+}
+
+.activityList img {
+    position: absolute;
+    width: 0.24rem;
+    height: 0.24rem;
+    left: -0.13rem;
+    top: -0.12rem;
+}
+
+.activityList>div>div {
+    position: relative;
+    top: -0.25rem;
+    left: 0.3rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+.activityList>div>div>span:nth-child(1) {
+    font-size: 0.22rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.activityList>div>div>span:nth-child(2) {
+    font-size: 0.16rem;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 0.1rem;
+}
+
+.activityList>div>div>div>div {
+    padding-left: 0.5rem;
+    padding-bottom: 0.1rem;
+}
+
+.activityList>div>div>div>div>span {
+    font-size: 0.22rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.activityList>div>div>div>div>span:hover {
+    color: #24dedf;
+}
+
+.activityList>div>div>div>div>div {
+    padding: 0.1rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    margin-top: 0.1rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.15rem;
+}
+
+.activityInfo .title {
+    text-align: center;
+    font-size: 0.3rem;
+    color: rgba(36, 222, 223, 1);
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    padding-bottom: 0.32rem;
+    position: relative;
+}
+
+.activityInfo .title img {
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.1rem;
+    cursor: pointer;
+    width: 1.09rem;
+    height: 0.37rem;
+}
+
+.activityContent {
+    width: 6rem;
+    font-weight: bold;
+    height: 6.8rem;
+}
+
+.activityContent .secTitle {
+    font-size: 0.24rem;
+    color: rgba(36, 222, 223, 1);
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.activityContent .content {
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+    line-height: 1.5em;
+    height: 4.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 0.1rem;
+}
+
+.otherInfo {
+    padding: 0.3rem 0.1rem 0;
+}
+
+.otherInfo span:nth-child(2n-1) {
+    font-size: 0.2rem;
+    color: rgba(36, 222, 223, 1);
+}
+
+.otherInfo span:nth-child(2n) {
+    font-size: 0.2rem;
+    color: #fff;
+    margin-right: 0.2rem;
+}
+
+.activityMedia {
+    margin-left: 0.7rem;
+    width: 8.08rem;
+}
+
+.tabs {
+    padding-top: 0.46rem;
+    border-bottom: 0.03rem solid rgba(98, 196, 218, 0.5);
+    color: rgba(36, 222, 223, 0.5);
+}
+
+.tabs span {
+    position: relative;
+    top: 0.03rem;
+    cursor: pointer;
+    margin-right: 0.3rem;
+}
+
+.tabs span:last-child {
+    margin-right: 0;
+}
+
+
+.tabs span.active {
+    color: rgba(36, 222, 223, 1);
+    border-bottom: 0.03rem solid #24dedf;
+    padding-bottom: 0.12rem;
+}
+
+.swiper-pagination {
+    margin-top: 0.2rem;
+    padding-bottom: 0.15rem;
+    height: 0.15rem;
+}
+
+.swiper-pagination-bullet {
+    width: 0.16rem !important;
+    height: 0.16rem !important;
+    border-radius: 50%;
+    background: rgba(0, 234, 255, 0.2);
+    margin-right: 0.15rem;
+}
+
+.swiper-pagination-bullet:last-child {
+    margin-right: 0;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: rgba(0, 234, 255, 1);
+}
+
+.swiper-container img {
+    max-width: 8.08rem;
+    max-height: 4.67rem;
+    border-radius: 0.2rem;
+}
+
+.imgsPanel {
+    padding-top: 0.2rem;
+}
+
+select {
+    cursor: pointer;
+}
+
+.orgInfoPanel-enter-active {
+    animation: bounceIn 0.5s;
+}
+
+.orgInfoPanel-leave-active {
+    animation: bounceOut 0.5s;
+}
+
+.rankAni-enter-active {
+    animation: bounceIn 0.5s;
+}
+
+.rankAni-leave-active {
+    animation: bounceOut 0.5s;
+}
+
+
+.rankBtn-enter-active {
+    animation: bounceInDown 0.5s;
+}
+
+.rankBtn-leave-active {
+    animation: bounceOutDown 0.5s;
+}
+
+.numberAni-enter-active {
+    animation: bounceInDown 0.5s;
+}
+
+.numberAni-leave-active {
+    animation: bounceOutUp 0.5s;
+}
+
+.chart1-enter-active {
+    animation: bounceInLeft 0.5s;
+}
+
+.chart1-leave-active {
+    animation: bounceOutLeft 0.5s;
+}
+
+.chart2-enter-active {
+    animation: bounceInLeft 0.75s;
+}
+
+.chart2-leave-active {
+    animation: bounceOutLeft 0.75s;
+}
+
+.chart3-enter-active {
+    animation: bounceInLeft 1s;
+}
+
+.chart3-leave-active {
+    animation: bounceOutLeft 1s;
+}
+
+.chart4-enter-active {
+    animation: bounceInRight 0.5s;
+}
+
+.chart4-leave-active {
+    animation: bounceOutRight 0.5s;
+}
+
+.chart5-enter-active {
+    animation: bounceInRight 0.75s;
+}
+
+.chart5-leave-active {
+    animation: bounceOutRight 0.75s;
+}
+
+.chart6-enter-active {
+    animation: bounceInRight 1s;
+}
+
+.chart6-leave-active {
+    animation: bounceOutRight 1s;
+}
+
+.smartNav {
+    width: 3rem;
+    position: absolute;
+    left: 8.1rem;
+    top: 9.39rem;
+}
+
+.smartNav img {
+    width: 0.82rem;
+    height: 0.96rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.1rem 0.02rem rgba(13, 161, 245, 1);
+}
+
+.smartNav img:hover {
+    box-shadow: 0 0 0.15rem 0.05rem rgba(13, 161, 245, 1);
+}
+
+.smartNav-enter-active {
+    animation: bounceInUp 0.5s;
+}
+
+.smartNav-leave-active {
+    animation: bounceOutDown 0.5s;
+}
+
+.peopleServise {
+    width: 5.17rem;
+    height: 8.19rem;
+    background: url(../imgs/eventListBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.2rem 0.3rem 0.2rem;
+    position: absolute;
+    top: 2.37rem;
+    left: 0.31rem;
+}
+
+.eventListPanel {
+    width: 5.17rem;
+    height: 8.19rem;
+    background: url(../imgs/eventListBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.2rem 0.35rem 0.3rem;
+    position: absolute;
+    top: 2.37rem;
+    left: 0.31rem;
+}
+
+.event7dayListPanel {
+    width: 5.17rem;
+    height: 8.19rem;
+    background: url(../imgs/eventListBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.2rem 0.4rem 0.3rem;
+    position: relative;
+}
+
+.eventType {
+    padding: 0 0.3rem 0.1rem;
+    font-size: 0.16rem;
+    color: rgba(72, 139, 158, 1);
+}
+
+.eventType span {
+    padding: 0.07rem 0.14rem;
+    border-radius: 0.16rem;
+    cursor: pointer;
+    border: solid 0.01rem rgba(99, 196, 218, 0);
+}
+
+.eventType span.active {
+    color: rgba(98, 196, 218, 1);
+    border: solid 0.01rem rgba(99, 196, 218, 1);
+}
+
+.peopleServiseList {
+    /* height: 7.4rem; */
+    overflow-y: auto;
+    padding-right: 0.1rem;
+}
+
+.peopleServiseList>div {
+    cursor: pointer;
+    position: relative;
+}
+
+.peopleServiseList>div>div:nth-child(1) div:nth-child(1) {
+    color: #24dedf;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 0.15rem;
+    border: 1px solid #24dedf;
+    border-radius: 0.05rem;
+    height: 0.31rem;
+    line-height: 0.31rem;
+    margin-right: 0.1rem;
+    padding: 0 0.05rem;
+}
+
+.peopleServiseList>div>div:nth-child(1) div:nth-child(1).active {
+    color: rgba(171, 171, 171, 1);
+    border: 1px solid rgba(171, 171, 171, 1);
+}
+
+.peopleServiseList>div:hover,
+.peopleServiseList>div.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.1rem;
+}
+
+.peopleServiseList>div>div:nth-child(1) div:nth-child(2) {
+    width: 0.66rem;
+    height: 0.33rem;
+    border-radius: 0.05rem;
+    font-size: 0.15rem;
+    text-align: center;
+    line-height: 0.33rem;
+    margin-right: 0.2rem;
+}
+
+
+.peopleServiseList>div>div:nth-child(1) div:nth-child(3) {
+    font-size: 0.15rem;
+    color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.peopleServiseList>div>.eventotherInfo {
+    padding-top: 0.1rem;
+}
+
+.peopleServiseList>div>.eventotherInfo div {
+    font-size: 0.15rem;
+    color: rgba(72, 139, 158, 1);
+}
+
+.peopleServiseList>div {
+    padding: 0.14rem 0.1rem;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.16);
+}
+
+.eventList {
+    overflow-y: auto;
+    padding-right: 0.1rem;
+}
+
+.eventList>div {
+    cursor: pointer;
+}
+
+.eventList>div:hover,
+.eventList>div.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.1rem;
+}
+
+.eventList>div>.eventotherInfo {
+    padding-top: 0.1rem;
+}
+
+.eventList>div>.eventotherInfo div {
+    font-size: 0.15rem;
+    color: rgba(72, 139, 158, 1);
+}
+
+.eventList>div>.eventListInfo div:nth-child(3) {
+    color: #24dedf;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 0.15rem;
+    border: 1px solid #24dedf;
+    border-radius: 0.05rem;
+    height: 0.31rem;
+    line-height: 0.31rem;
+    margin-left: 0.1rem;
+    padding: 0 0.05rem;
+}
+
+.eventList>div>.eventListInfo div:nth-child(4) {
+    margin-left: 0.1rem;
+}
+
+.eventList>div>.eventListInfo div:nth-child(4) img {
+    width: 0.14rem;
+    height: 0.21rem;
+}
+
+.eventList>div>.eventListInfo div:nth-child(5) {
+    margin-left: 0.1rem;
+}
+
+.eventList>div>.eventListInfo div:nth-child(5) img {
+    width: 0.15rem;
+    height: 0.15rem;
+}
+
+.eventList>div>.eventListInfo div:nth-child(1) {
+    padding: 0 0.1rem;
+    height: 0.33rem;
+    border-radius: 0.05rem;
+    font-size: 0.15rem;
+    text-align: center;
+    line-height: 0.33rem;
+    margin-right: 0.2rem;
+}
+
+.eventList>div>.eventListInfo div:nth-child(1).eventType0 {
+    background-color: rgba(84, 241, 255, 0.24);
+    color: rgba(84, 241, 255, 1);
+}
+
+.eventList>div>.eventListInfo div:nth-child(1).eventType1 {
+    background-color: rgba(247, 151, 0, 0.24);
+    color: rgba(247, 151, 0, 1);
+}
+
+.eventList>div>.eventListInfo div:nth-child(1).eventType2 {
+    background-color: rgba(171, 171, 171, 0.24);
+    color: rgba(171, 171, 171, 1);
+}
+
+.eventList>div>.eventListInfo div:nth-child(2) {
+    font-size: 0.15rem;
+    color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+.eventList>div {
+    padding: 0.14rem 0.1rem;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.16);
+}
+
+.eventStatisticsPanel {
+    background: url(../imgs/statisticsBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    width: 13.27rem;
+    height: 8.19rem;
+    padding: 0.32rem 0.83rem 0.45rem;
+    position: relative;
+}
+
+.eventStatisticsPanel.active {
+    width: 7.17rem;
+    height: 8.5rem;
+}
+
+/* .eventStatisticsPanel {
+    width: 7.17rem;
+    height: 8.5rem;
+    background: url(../imgs/eventListBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.4rem 0.4rem 0.2rem;
+} */
+
+.eventStatisticsPanel .title {
+    font-size: 0.2rem;
+    color: rgba(61, 128, 159, 1);
+}
+
+.eventStatisticsPanel .title img {
+    width: 1.07rem;
+    height: 0.16rem;
+    margin-right: 0.2rem;
+}
+
+.eventNumber {
+    width: 4.6rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+.eventNumber>div>div:nth-child(1) {
+    font-size: 0.17rem;
+    color: rgba(0, 168, 255, 1);
+}
+
+.eventNumber>div:nth-child(1) div:nth-child(2) {
+    font-size: 0.43rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.eventNumber>div:nth-child(2) div:nth-child(2) {
+    font-size: 0.43rem;
+    color: rgba(216, 148, 93, 1);
+    font-weight: bold;
+}
+
+.eventNumber>div:nth-child(3) div:nth-child(2) {
+    font-size: 0.43rem;
+    color: rgba(0, 234, 255, 1);
+    font-weight: bold;
+}
+
+.eventNumber>div:nth-child(4) div:nth-child(2) {
+    font-size: 0.43rem;
+    color: rgba(119, 135, 147, 1);
+    font-weight: bold;
+}
+
+#eventTypeChart {
+    height: 2rem;
+    width: 4rem;
+    margin: 0.4rem 0;
+}
+
+#eventNewChart {
+    width: 4.7rem;
+    height: 2rem;
+    margin-top: 0.3rem;
+}
+
+#deptChart {
+    width: 6.14rem;
+    height: 2.38rem;
+}
+
+.eventStcList {
+    background: #071b56;
+    width: 6.14rem;
+    border-radius: 0.2rem;
+    margin-top: 0.25rem;
+    padding: 0.24rem;
+    overflow: hidden;
+}
+
+.eventStcList table {
+    width: 100%;
+}
+
+.eventStcList table th {
+    position: sticky;
+    top: 0;
+}
+
+.eventStcList table th div {
+    font-size: 0.16rem;
+    color: rgba(255, 255, 255, 0.48);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+    padding-bottom: 0.12rem;
+
+    background: #071b56;
+}
+
+.eventStcList table td {
+    font-size: 0.18rem;
+    text-align: center;
+    padding: 0.15rem 0.1rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.eventStcList div {
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+.stcBack {
+    width: 1.09rem !important;
+    margin-right: 0;
+    height: 0.37rem !important;
+    cursor: pointer;
+}
+
+.gridMemberListPanel {
+    width: 5.17rem;
+    height: 8.19rem;
+    background: url(../imgs/eventListBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 0.5rem;
+    position: absolute;
+    top: 2.37rem;
+    left: 13.74rem;
+}
+
+.gridType {
+    padding: 0 0.3rem 0.3rem;
+    font-size: 0.16rem;
+    color: rgba(72, 139, 158, 1);
+}
+
+.gridType span {
+    padding: 0.07rem 0.14rem;
+    border-radius: 0.16rem;
+    cursor: pointer;
+    border: solid 0.01rem rgba(99, 196, 218, 0);
+}
+
+.gridType span.active {
+    color: rgba(98, 196, 218, 1);
+    border: solid 0.01rem rgba(99, 196, 218, 1);
+}
+
+.gridMemberList {
+    height: 6.4rem;
+    overflow-y: auto;
+    padding-right: 0.1rem;
+}
+
+.gridMemberList table {
+    width: 100%;
+}
+
+.gridMemberList th {
+    font-size: 0.15rem;
+    color: rgba(99, 196, 218, 0.41);
+    padding: 0.05rem 0;
+    position: sticky;
+    top: 0;
+    background: #0d2e59;
+}
+
+.gridMemberList td {
+    text-align: center;
+    padding: 0.1rem;
+    font-size: 0.15rem;
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.16);
+}
+
+#convenienceChart1,
+#convenienceChart2 {
+    width: 4.31rem;
+    height: 2.73rem;
+    background: url(../imgs/mapChartBg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#convenienceChart1 {
+    position: absolute;
+    top: 4.89rem;
+    left: 14.5rem;
+}
+
+#convenienceChart2 {
+    position: absolute;
+    top: 7.79rem;
+    left: 14.5rem;
+}
+
+.convenience {
+    width: 4.31rem;
+    position: absolute;
+    left: 14.5rem;
+    top: 2.44rem;
+}
+
+.convenience>div {
+    width: 1.3rem;
+    height: 2.22rem;
+    background-color: rgba(35, 46, 99, 0.8);
+    border-radius: 0.1rem;
+}
+
+.convenience>div div:nth-child(1) {
+    width: 1.02rem;
+    height: 1.05rem;
+    text-align: center;
+    line-height: 1.15rem;
+    font-size: 0.25rem;
+    color: rgba(1, 16, 72, 1);
+    font-weight: bold;
+}
+
+.convenience>div div:nth-child(2) {
+    font-size: 0.15rem;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 0.2rem;
+}
+
+.convenience>div:nth-child(1) div:nth-child(1) {
+    background: url(../imgs/peopleCarNumber1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.convenience>div:nth-child(2) div:nth-child(1) {
+    background: url(../imgs/peopleCarNumber2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.convenience>div:nth-child(3) div:nth-child(1) {
+    background: url(../imgs/peopleCarNumber3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.smartActivityListPanel {
+    width: 5.17rem;
+    height: 8.19rem;
+    background: url(../imgs/eventListBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.4rem 0.35rem 0.2rem;
+    position: absolute;
+    top: 2.37rem;
+    left: 0.31rem;
+}
+
+.smartActivityType {
+    padding: 0 0.3rem 0.3rem;
+    font-size: 0.16rem;
+    color: rgba(72, 139, 158, 1);
+}
+
+.smartActivityType span {
+    padding: 0.07rem 0.14rem;
+    border-radius: 0.16rem;
+    cursor: pointer;
+    border: solid 0.01rem rgba(99, 196, 218, 0);
+}
+
+.smartActivityType span.active {
+    color: rgba(98, 196, 218, 1);
+    border: solid 0.01rem rgba(99, 196, 218, 1);
+}
+
+.smartActivityList {
+    overflow-y: auto;
+}
+
+.smartActivityList>div>.eventotherInfo {
+    padding-top: 0.1rem;
+}
+
+.smartActivityList>div>.eventotherInfo div {
+    font-size: 0.15rem;
+    color: rgba(72, 139, 158, 1);
+}
+
+.smartActivityList>div {
+    cursor: pointer;
+}
+
+.smartActivityList>div:hover,
+.smartActivityList>div.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.1rem;
+}
+
+.smartActivityList>div>div:nth-child(1)>div:nth-child(1) {
+    width: 0.66rem;
+    height: 0.33rem;
+    border-radius: 0.05rem;
+    font-size: 0.15rem;
+    text-align: center;
+    line-height: 0.33rem;
+    margin-right: 0.2rem;
+}
+
+.smartActivityList>div>div:nth-child(1)>div:nth-child(1).smartActivityType1 {
+    background-color: rgba(255, 180, 0, 0.24);
+    color: rgba(255, 180, 0, 1);
+}
+
+.smartActivityList>div>div:nth-child(1)>div:nth-child(1).smartActivityType2 {
+    background-color: rgba(212, 56, 40, 0.24);
+    color: rgba(212, 56, 40, 1);
+}
+
+.smartActivityList>div>div:nth-child(1)>div:nth-child(2) {
+    font-size: 0.15rem;
+    color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.smartActivityList>div>div:nth-child(1)>div:nth-child(2) span {
+    color: rgba(72, 139, 158, 1);
+    margin-right: 0.1rem;
+}
+
+.smartActivityList>div {
+    padding: 0.14rem 0.1rem;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.16);
+}
+
+.smartActivityNumber {
+    position: absolute;
+    width: 4.31rem;
+    top: 2.61rem;
+    left: 14.5rem;
+}
+
+.smartActivityNumber>div {
+    width: 1.88rem;
+    height: 1.17rem;
+    background: url(../imgs/numberBg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.smartActivityNumber>div div:nth-child(1) {
+    font-size: 0.25rem;
+    color: rgba(202, 111, 67, 1);
+    font-weight: bold;
+}
+
+.smartActivityNumber>div div:nth-child(2) {
+    font-size: 0.16rem;
+    color: rgba(223, 223, 223, 1);
+    padding-top: 0.1rem;
+}
+
+#smartActivityChart1,
+#smartActivityChart2 {
+    width: 4.31rem;
+    height: 2.73rem;
+    background: url(../imgs/mapChartBg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#smartActivityChart1 {
+    position: absolute;
+    top: 4.3rem;
+    left: 14.5rem;
+}
+
+#smartActivityChart2 {
+    position: absolute;
+    top: 7.48rem;
+    left: 14.5rem;
+}
+
+.smartActivityContentPanel {
+    width: 17.76rem;
+    height: 8.63rem;
+    background: url(../imgs/orgInfoBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 1.1rem 0.6rem;
+    position: relative;
+}
+
+.smartActivityContentPanel .title {
+    text-align: center;
+    font-size: 0.3rem;
+    color: rgba(36, 222, 223, 1);
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    padding-bottom: 0.32rem;
+}
+
+.smartActivityContentPanel .content {
+    font-size: 0.2rem;
+    color: #ffffff;
+    line-height: 2em;
+    text-align: justify;
+}
+
+.smartActivityContentPanel .content img {
+    max-width: 5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.smartActivityContentPanel .content p {
+    text-indent: 2em;
+}
+
+
+
+.smartActivityContentPanel .otherInfo div {
+    margin-top: 0.2rem;
+}
+
+.smartActivitySwiper {
+    width: 7.15rem;
+}
+
+.smartActivitySwiper img {
+    max-width: 7.15rem;
+    max-height: 4.05rem;
+}
+
+.PanelBottom {
+    padding-top: 0.3rem;
+}
+
+.eventListPanel-enter-active {
+    animation: bounceInLeft 0.5s;
+}
+
+.eventListPanel-leave-active {
+    animation: bounceOutLeft 0.5s;
+}
+
+.gridMemberListPanel-enter-active {
+    animation: bounceInRight 0.5s;
+}
+
+.gridMemberListPanel-leave-active {
+    animation: bounceOutRight 0.5s;
+}
+
+.convenience-enter-active {
+    animation: bounceInRight 0.5s;
+}
+
+.convenience-leave-active {
+    animation: bounceOutRight 0.5s;
+}
+
+.convenienceChart1-enter-active {
+    animation: bounceInRight 0.75s;
+}
+
+.convenienceChart1-leave-active {
+    animation: bounceOutRight 0.75s;
+}
+
+.convenienceChart2-enter-active {
+    animation: bounceInRight 1s;
+}
+
+.convenienceChart2-leave-active {
+    animation: bounceOutRight 1s;
+}
+
+.eventStatisticsPanel-enter-active {
+    animation: bounceIn 0.5s;
+}
+
+.eventStatisticsPanel-leave-active {
+    animation: bounceOut 0.5s;
+}
+
+.smartActivityListPanel-enter-active {
+    animation: bounceInLeft 0.5s;
+}
+
+.smartActivityListPanel-leave-active {
+    animation: bounceOutLeft 0.5s;
+}
+
+.smartActivityNumber-enter-active {
+    animation: bounceInRight 0.5s;
+}
+
+.smartActivityNumber-leave-active {
+    animation: bounceOutRight 0.5s;
+}
+
+.smartActivityChart1-enter-active {
+    animation: bounceInRight 0.75s;
+}
+
+.smartActivityChart1-leave-active {
+    animation: bounceOutRight 0.75s;
+}
+
+.smartActivityChart2-enter-active {
+    animation: bounceInRight 1s;
+}
+
+.smartActivityChart2-leave-active {
+    animation: bounceOutRight 1s;
+}
+
+.smartActivityContentPanel-enter-active {
+    animation: bounceIn 0.5s;
+}
+
+.smartActivityContentPanel-leave-active {
+    animation: bounceOut 0.5s;
+}
+
+.townMarker {
+    cursor: pointer;
+}
+
+.townMarker div:nth-child(1) {
+    color: #fff;
+    font-size: 0.13rem;
+    padding-bottom: 0.05rem;
+
+}
+
+.townMarker img.ring1 {
+    width: 0.37rem;
+    height: 0.25rem;
+    display: none;
+    animation: swing 1s infinite linear;
+}
+
+.townMarker img.ring2 {
+    width: 0.24rem;
+    height: 0.19rem;
+    display: none;
+    animation: swing 1s infinite linear;
+}
+
+.townMarker.active div:nth-child(1) {
+    color: #dd742f;
+}
+
+.townMarker div:nth-child(2) {
+    width: 0.15rem;
+    height: 0.15rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.townMarker.active div:nth-child(2) {
+    border-radius: 50%;
+    background-color: #dd742f;
+}
+
+.amap-marker-label {
+    border: none !important;
+    background: transparent !important;
+}
+
+.villageGridtableTitle {
+    text-align: center;
+    font-size: 0.18rem;
+    color: #62c4da;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.03rem solid #62c4da;
+    padding-top: 0.2rem;
+}
+
+.pageNav {
+    height: 0.7rem;
+}
+
+.pageNav a {
+    padding: 0.05rem 0.1rem;
+    font-size: 0.18rem;
+    color: #6af6fd;
+    background: #122769;
+    border-radius: 0.10rem;
+    margin: 0 0.05rem;
+}
+
+
+.layui-laypage-curr {
+    padding: 0.05rem 0.10rem;
+    font-size: 0.18rem;
+    color: #122769;
+    background: #6af6fd;
+    border-radius: 0.10rem;
+    margin: 0 0.05rem;
+}
+
+.layui-laypage-curr em {
+    font-style: normal;
+}
+
+.layui-laypage-spr {
+    color: #6af6fd;
+}
+
+.loadingbg {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 10 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.loadingbg img {
+    width: 1rem !important;
+    height: 1rem !important;
+}
+
+#captchaPic {
+    width: 1.8rem !important;
+    height: 0.8rem !important;
+    margin-right: 0 !important;
+}
+
+.loginOut {
+    width: 1.14rem;
+    height: 0.41rem;
+    /* background-image: linear-gradient(-87deg, rgba(0, 242, 254, 1) 0%, rgba(79, 172, 254, 1) 100%), linear-gradient(rgba(2, 14, 73, 1), rgba(2, 14, 73, 1)); */
+    /* background-blend-mode: normal, normal; */
+    /* border-radius: 0.1rem; */
+    /* color: rgba(2, 14, 73, 1); */
+    /* font-size: 0.25rem; */
+    /* font-weight: bold; */
+    /* text-align: center; */
+    /* line-height: 0.6rem; */
+    cursor: pointer;
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 20
+}
+
+.partyOrgMarker img {
+    width: 0.31rem;
+    height: 0.46rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.partyOrgMarker div {
+    position: absolute;
+    opacity: 0;
+    background-color: #ca4e4e;
+    border-radius: 0.2rem;
+    font-size: 0.2rem;
+    color: #ffffff;
+    padding: 0.1rem 0.2rem;
+    width: 2.04rem;
+    text-align: center;
+    left: 50%;
+    bottom: -0.4rem;
+    margin-left: -1.02rem;
+    pointer-events: none;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.partyOrgMarker.active img {
+    opacity: 1;
+}
+
+.partyOrgMarker.active div {
+    opacity: 1;
+}
+
+.partyOrgMarker {
+    position: relative;
+}
+
+.meetingBtn {
+    position: fixed;
+    top: 0.5rem;
+    left: 15.7rem;
+    cursor: pointer;
+    width: 1.34rem;
+    height: 1.20rem;
+}
+
+.basicBottomBtns {
+    position: absolute;
+    top: 9.39rem;
+    left: 7.1rem;
+    width: 5rem;
+}
+
+.basicBottomBtns img {
+    width: 0.82rem;
+    height: 0.96rem;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    box-shadow: 0 0 0.15rem 0.05rem rgba(13, 161, 245, 1);
+}
+
+.basicBottomBtns img:hover {
+    box-shadow: 0 0 0.3rem 0.1rem rgba(13, 161, 245, 1);
+}
+
+.eventPointMarker img {
+    width: 0.25rem;
+    height: 0.52rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.eventPointMarker.carEvent img {
+    width: 0.25rem;
+    height: 0.36rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.eventPointMarker.active img {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+}
+
+.peopleServiseMarker img {
+    width: 0.18rem;
+    height: 0.38rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.peopleServiseMarker.active img {
+    width: 0.18rem;
+    height: 0.38rem;
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+}
+
+.eventInfoPanel {
+    width: 13.27rem;
+    height: 8.19rem;
+    background: url(../imgs/eventContentBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.5rem 0.7rem;
+    position: relative;
+}
+
+
+.eventInfoPanel .title {
+    font-size: 0.2rem;
+    color: rgba(61, 128, 159, 1);
+}
+
+.eventInfoPanel .title img {
+    width: 1.07rem;
+    height: 0.16rem;
+    margin-right: 0.2rem;
+}
+
+.eventInfoPanel .title2 {
+    font-size: 0.2rem;
+    padding: 0.5rem 0;
+    color: rgba(61, 128, 159, 1);
+}
+
+.eventInfoPanel .contentInfo {
+    margin-top: 0.5rem;
+    height: 6rem;
+    overflow-y: auto;
+}
+
+.eventInfoPanel .contentInfo img {
+    margin-bottom: 0.1rem;
+    margin-right: 0.1rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    object-fit: cover;
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+
+.eventInfoPanel .contentInfo>div>div:nth-child(1) {
+    width: 1rem;
+    padding-right: 0.1rem;
+    text-align: right;
+    font-size: 0.18rem;
+    color: rgba(61, 128, 159, 1);
+}
+
+.eventInfoPanel .contentInfo>div {
+    padding-bottom: 0.37rem;
+}
+
+.eventInfoPanel .contentInfo>div div:nth-child(2) {
+    font-size: 0.18rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.eventInfoPanel .eventDoBtns div {
+    font-size: 0.24rem;
+    color: rgba(2, 15, 79, 1);
+    line-height: 0.42rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.eventInfoPanel .eventDoBtns {
+    padding-top: 0.5rem;
+}
+
+.eventInfoPanel .eventDoBtns div:nth-child(1) {
+    width: 1.55rem;
+    height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(0, 242, 254, 0.85) 0%,
+            rgba(79, 172, 254, 0.85) 100%),
+        linear-gradient(rgba(221, 164, 11, 1),
+            rgba(221, 164, 11, 1));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    margin-right: 0.2rem;
+}
+
+.eventInfoPanel .eventDoBtns div:nth-child(2) {
+    width: 1.55rem;
+    height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(254, 220, 69, 0.81) 0%,
+            rgba(251, 112, 153, 0.81) 100%),
+        linear-gradient(rgba(221, 164, 11, 1),
+            rgba(221, 164, 11, 1));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    margin-right: 0.2rem;
+}
+
+.eventInfoPanel .eventDoBtns div:nth-child(3) {
+    width: 1.55rem;
+    height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(0, 204, 255, 0.81) 0%,
+            rgba(255, 0, 77, 0.81) 100%),
+        linear-gradient(rgb(207, 255, 217),
+            rgb(216, 216, 216));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+}
+
+.flowList {
+    overflow-y: auto;
+    padding: 0.2rem;
+}
+
+.flowList>div {
+    position: relative;
+    border-left: 1px solid rgba(231, 231, 231, 1);
+    padding-left: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.flowList div span {
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: rgba(61, 128, 159, 1);
+    border-radius: 50%;
+}
+
+.flowList div:last-child {
+    border-left: 0;
+}
+
+.flowList div:last-child span {
+    background-color: rgba(221, 164, 11, 1);
+}
+
+.flowList div div:nth-child(2) {
+    font-size: 0.21rem;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    top: -0.13rem;
+}
+
+.flowList div div:nth-child(3) {
+    font-size: 0.20rem;
+    color: rgb(196, 196, 196);
+}
+
+.flowList div div:nth-child(4) {
+    font-size: 0.19rem;
+    color: rgba(151, 151, 151, 1);
+}
+
+.flowList div div:nth-child(5) {
+    padding-top: 0.1rem;
+    font-size: 0.19rem;
+    color: rgba(151, 151, 151, 1);
+}
+
+.eventInfoPanel>div:nth-child(1) {
+    width: 6.38rem;
+    padding-right: 0.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.eventInfoPanel>div:nth-child(2) {
+    padding-left: 0.5rem;
+}
+
+.flowPanel {
+    background: url(../imgs/eventContentBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    width: 7.5rem;
+    height: 4.85rem;
+}
+
+.flowPanel select {
+    padding: 0 0.2rem;
+    height: 0.42rem;
+    background-color: #47527f;
+    border-radius: 0.1rem;
+    color: #fff;
+}
+
+.flowPanel>div:nth-child(1) {
+    padding-bottom: 0.53rem;
+}
+
+.flowPanel>div:nth-child(2) {
+    width: 1.55rem;
+    height: 0.42rem;
+    text-align: center;
+    line-height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(248, 199, 213, 1) 0%,
+            rgba(153, 149, 239, 1) 100%),
+        linear-gradient(rgba(221, 164, 11, 1),
+            rgba(221, 164, 11, 1));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+
+.peopleServiseInfoPanel {
+    width: 12.54rem;
+    height: 6.5rem;
+    background: url(../imgs/serviseContentbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.5rem 0.7rem;
+    position: relative;
+}
+
+
+.peopleServiseInfoPanel .title {
+    font-size: 0.2rem;
+    color: rgba(61, 128, 159, 1);
+}
+
+.peopleServiseInfoPanel .title img {
+    width: 1.07rem;
+    height: 0.16rem;
+    margin-right: 0.2rem;
+}
+
+.peopleServiseInfoPanel .title img.active {
+    animation: roundImg 1s infinite linear;
+}
+
+@keyframes roundImg {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.peopleServiseInfoPanel .title2 {
+    font-size: 0.2rem;
+    padding: 0.2rem 0 0;
+    margin-bottom: 0.2rem;
+    color: rgba(61, 128, 159, 1);
+}
+
+.peopleServiseInfoPanel .contentInfo {
+    padding-top: 0.5rem;
+    height: 5.3rem;
+    overflow-y: auto;
+}
+
+.peopleServiseInfoPanel .contentInfo img {
+    margin-right: 0.1rem;
+    margin-bottom: 0.1rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    object-fit: cover;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0.1rem;
+}
+
+.peopleServiseInfoPanel .contentInfo>div>div:nth-child(1) {
+    width: 1rem;
+    padding-right: 0.1rem;
+    text-align: right;
+    font-size: 0.18rem;
+    color: rgba(61, 128, 159, 1);
+}
+
+.peopleServiseInfoPanel .contentInfo>div {
+    padding-bottom: 0.37rem;
+}
+
+.peopleServiseInfoPanel .contentInfo>div>div:nth-child(2) {
+    font-size: 0.18rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.peopleServiseInfoPanel .eventDoBtns div {
+    font-size: 0.24rem;
+    color: rgba(2, 15, 79, 1);
+    line-height: 0.42rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.peopleServiseInfoPanel .eventDoBtns {
+    padding-top: 0.2rem;
+}
+
+.peopleServiseInfoPanel .eventDoBtns div:nth-child(1) {
+    width: 1.55rem;
+    height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(0, 242, 254, 0.85) 0%,
+            rgba(79, 172, 254, 0.85) 100%),
+        linear-gradient(rgba(221, 164, 11, 1),
+            rgba(221, 164, 11, 1));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    margin-right: 0.2rem;
+}
+
+.peopleServiseInfoPanel .eventDoBtns div:nth-child(2) {
+    width: 1.55rem;
+    height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(254, 220, 69, 0.81) 0%,
+            rgba(251, 112, 153, 0.81) 100%),
+        linear-gradient(rgba(221, 164, 11, 1),
+            rgba(221, 164, 11, 1));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    margin-right: 0.2rem;
+}
+
+.peopleServiseInfoPanel .eventDoBtns div:nth-child(3) {
+    width: 1.55rem;
+    height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(0, 204, 255, 0.81) 0%,
+            rgba(255, 0, 77, 0.81) 100%),
+        linear-gradient(rgb(207, 255, 217),
+            rgb(216, 216, 216));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+}
+
+.PeopleCarMarker img {
+    width: 0.18rem;
+    height: 0.38rem;
+}
+
+.SmartActivityMarker img {
+    width: 0.18rem;
+    height: 0.38rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.SmartActivityMarker.active {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+}
+
+.peopleServiseInfoPanel>div:nth-child(1) {
+    width: 5.79rem;
+    padding-right: 0.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.peopleServiseInfoPanel>div:nth-child(2) {
+    padding-left: 0.5rem;
+}
+
+.myConfirmPanel,
+.myAlertPanel {
+    background: url(../imgs/eventContentBg.png) no-repeat center center !important;
+    background-size: 100% 100% !important;
+    width: 5.5rem !important;
+    height: 2.85rem !important;
+}
+
+.myConfirmPanel>div:nth-child(1),
+.myAlertPanel>div:nth-child(1) {
+    border: none !important;
+    font-size: 0.4rem !important;
+}
+
+.myConfirmPanel>div:nth-child(2),
+.myAlertPanel>div:nth-child(2) {
+    color: #4facfe !important;
+    font-size: 0.3rem !important;
+}
+
+.myAlertPanel>div:nth-child(3) {
+    width: 1.55rem;
+    height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(248, 199, 213, 1) 0%,
+            rgba(153, 149, 239, 1) 100%),
+        linear-gradient(rgba(221, 164, 11, 1),
+            rgba(221, 164, 11, 1));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    text-align: center;
+    line-height: 0.42rem;
+    font-size: 0.24rem;
+    color: rgba(2, 15, 79, 1);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.myConfirmPanel>div:nth-child(3) div:nth-child(1) {
+    width: 1.55rem;
+    height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(248, 199, 213, 1) 0%,
+            rgba(153, 149, 239, 1) 100%),
+        linear-gradient(rgba(221, 164, 11, 1),
+            rgba(221, 164, 11, 1));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    text-align: center;
+    line-height: 0.42rem;
+    font-size: 0.24rem;
+    color: rgba(2, 15, 79, 1);
+    margin-right: 0.2rem;
+    cursor: pointer;
+}
+
+.myConfirmPanel>div:nth-child(3) div:nth-child(2) {
+    width: 1.55rem;
+    height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(0, 242, 254, 0.85) 0%,
+            rgba(79, 172, 254, 0.85) 100%),
+        linear-gradient(rgba(221, 164, 11, 1),
+            rgba(221, 164, 11, 1));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    text-align: center;
+    line-height: 0.42rem;
+    font-size: 0.24rem;
+    color: rgba(2, 15, 79, 1);
+    cursor: pointer;
+}
+
+.rankTitle {
+    position: relative;
+}
+
+.rankTitle span {
+    position: absolute;
+    right: 0;
+    top: 0.1rem;
+    font-size: 0.18rem;
+    color: #72a7d2;
+    cursor: pointer;
+}
+
+.rankTitle span img {
+    width: 0.18rem;
+    height: 0.22rem;
+    margin-right: 0.1rem;
+}
+
+.partyRankPanel td div.flex-wrap div,
+.orgRankPanel td div.flex-wrap div {
+    width: 0.21rem;
+    height: 0.21rem;
+    position: relative;
+    margin-right: 0.05rem;
+    cursor: pointer;
+}
+
+.partyRankPanel td div.flex-wrap div img,
+.orgRankPanel td div.flex-wrap div img {
+    width: 0.21rem;
+    height: 0.21rem;
+}
+
+.partyRankPanel td div.flex-wrap div div.name,
+.orgRankPanel td div.flex-wrap div div.name {
+    font-size: 0.18rem;
+    color: #e8e8e8;
+    position: absolute;
+    width: 1.54rem;
+    height: 0.48rem;
+    padding-top: 0.06rem;
+    line-height: 0.42rem;
+    text-align: center;
+    background: url(../imgs/rankOverName.png) no-repeat center center;
+    background-size: 100% 100%;
+    left: -0.665rem;
+    top: 0.25rem;
+    z-index: 2;
+}
+
+.partyRankPanel td div.flex-wrap div:last-child,
+.orgRankPanel td div.flex-wrap div:last-child {
+    margin-right: 0;
+}
+
+
+.EvaRolePanel {
+    width: 17.76rem;
+    height: 8.63rem;
+    background: url(../imgs/orgInfoBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 1.1rem 0.6rem;
+}
+
+.evaRoleTitleLine {
+    padding-bottom: 0.2rem;
+}
+
+.evaRoleTitleLine div:nth-child(1) {
+    font-size: 0.3rem;
+    color: #24dedf;
+    font-weight: bold;
+}
+
+.evaRoleTitleLine img {
+    width: 0.36rem;
+    height: 0.36rem;
+    cursor: pointer;
+}
+
+.evaRoleTitleLine .evaTabs div {
+    border-bottom: solid 0.07rem rgba(36, 222, 223, 0.1);
+    width: 3.71rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: rgba(138, 145, 160, 1);
+    padding-bottom: 0.09rem;
+    cursor: pointer;
+}
+
+.evaRoleTitleLine .evaTabs div.active {
+    border-bottom: solid 0.07rem rgba(36, 222, 223, 1);
+    color: rgba(36, 222, 223, 1);
+}
+
+.evaRoleTable th {
+    background: rgba(60, 145, 167, 0.1);
+    font-size: 0.18rem;
+    color: rgba(224, 225, 225, 0.6);
+    padding: 0.1rem;
+    border-bottom: 0.03rem solid transparent;
+}
+
+.evaRoleTable table {
+    height: 100%;
+}
+
+.evaRoleTable th:first-child {
+    border-radius: 0.2rem 0 0 0;
+}
+
+.evaRoleTable th:last-child {
+    border-radius: 0 0.2rem 0 0;
+}
+
+.evaRoleTable td {
+    background: rgba(39, 105, 150, 0.8);
+    text-align: center;
+    font-size: 0.18rem;
+    color: rgba(232, 232, 232, 1);
+    font-weight: bold;
+    padding: 0.2rem;
+}
+
+.evaRoleTable td:last-child {
+    text-align: left;
+    font-size: 0.16rem;
+    color: rgba(224, 225, 225, 1);
+}
+
+.evaRoleTable tr:last-child td:last-child {
+    border-radius: 0 0 0.2rem 0;
+}
+
+.evaRoleTable tr:nth-child(1) td:nth-child(1) {
+    font-size: 0.25rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    text-align: center;
+    background: rgba(39, 105, 150, 1);
+    padding: 0;
+}
+
+.evaRoleTip {
+    color: rgba(138, 145, 160, 1);
+    font-size: 0.16rem;
+    padding-top: 0.2rem;
+}
+
+.spotRecordTineLinePanel {
+    width: 10.76rem;
+    height: 7.26rem;
+    background: url(../imgs/rankbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 1.2rem 0.5rem;
+}
+
+.spotRecordTitle {
+    text-align: center;
+    font-size: 0.3rem;
+    color: rgba(36, 222, 223, 1);
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    position: relative;
+}
+
+.spotRecordTitle select {
+    position: absolute;
+    right: 0;
+    top: 0.1rem;
+}
+
+.spotRecordTineLineOut {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.spotRecordTineLine {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+
+}
+
+.spotRecordTineLine>div {
+    position: relative;
+    border-top: 0.02rem solid rgba(255, 255, 255, 0.53);
+}
+
+.spotRecordTineLine>div:last-child {
+    border: none;
+}
+
+.spotRecordTineLine div img {
+    position: absolute;
+    width: 0.24rem;
+    height: 0.24rem;
+    left: -0.12rem;
+    top: -0.13rem;
+}
+
+.spotRecordTineLine>div>div {
+    position: relative;
+    padding-bottom: 0.5rem;
+    width: 2.5rem;
+}
+
+.spotRecordTineLine>div>div>div:nth-child(1) span:nth-child(1) {
+    font-size: 0.25rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    margin-right: 0.06rem;
+}
+
+.spotRecordTineLine .timeLine {
+    position: absolute;
+    top: -0.7rem;
+    left: -0.5rem;
+}
+
+.spotRecordTineLine>div>div>div:nth-child(1) span:nth-child(2) {
+    font-size: 0.16rem;
+    color: rgba(255, 255, 255, 1);
+    margin-right: 0.38rem;
+}
+
+.spotRecordTineLine .spotActList div {
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+    margin-right: 0.2rem;
+    margin-top: 0.1rem;
+    cursor: pointer;
+}
+
+.spotRecordTineLine .spotActList div span {
+    font-size: 0.2rem;
+    color: rgba(36, 222, 223, 1);
+}
+
+.spotActOrgListTitle {
+    text-align: center;
+    font-size: 0.3rem;
+    color: rgba(36, 222, 223, 1);
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    position: relative;
+}
+
+.spotActOrgListTitle img {
+    width: 0.36rem;
+    height: 0.36rem;
+    position: absolute;
+    right: 0;
+    top: 0.1rem;
+    cursor: pointer;
+}
+
+.spotActOrgList {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 0.1rem;
+    margin-top: 0.2rem;
+}
+
+.spotActOrgList table {
+    width: 100%;
+}
+
+.spotActOrgList table th {
+    font-size: 0.18rem;
+    color: rgba(224, 225, 225, 0.6);
+    padding: 0.1rem 0;
+    position: sticky;
+    top: 0;
+    background: #0d2e59;
+}
+
+.spotActOrgList table th:nth-child(2),
+.spotActOrgList table th:nth-child(3),
+.spotActOrgList table th:nth-child(4) {
+    width: 1.5rem;
+}
+
+.spotActOrgList table tr:nth-child(2n) td {
+    font-size: 0.18rem;
+    color: rgba(232, 232, 232, 1);
+    background-color: rgba(39, 105, 150, 0.8);
+    padding: 0.1rem;
+    text-align: center;
+    border-top: 0.05rem solid #071b35;
+    cursor: pointer;
+}
+
+.spotActOrgList table tr:nth-child(2n-1) td {
+    font-size: 0.18rem;
+    color: rgba(232, 232, 232, 1);
+    background: rgba(39, 105, 150, 0.55);
+    padding: 0.1rem;
+    text-align: center;
+    border-top: 0.05rem solid #071b35;
+    cursor: pointer;
+}
+
+.iSelectStarPanel {
+    width: 10.76rem;
+    height: 7.26rem;
+    background: url(../imgs/rankbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 0.8rem 0.5rem;
+    position: relative;
+}
+
+.iselectStarTitle {
+    text-align: center;
+    font-size: 0.3rem;
+    color: rgba(36, 222, 223, 1);
+    padding-bottom: 0.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    margin-bottom: 0.2rem;
+}
+
+.iselectCharts>div {
+    width: 3.36rem;
+    height: 2.58rem;
+    background-color: rgba(35, 216, 218, 0.09);
+    border-radius: 0.1rem;
+}
+
+.iselectList {
+    padding-right: 0.3rem;
+    height: 100%;
+}
+
+.iselectList table {
+    width: 100%;
+    height: 100%;
+}
+
+.iselectList table th {
+    font-size: 0.16rem;
+    color: rgba(255, 255, 255, 0.54);
+    padding: 0.05rem;
+}
+
+.iselectList table td {
+    text-align: center;
+    font-size: 0.16rem;
+    color: rgba(15, 212, 219, 1);
+    background-color: rgba(15, 212, 219, 0.12);
+    padding: 0.05rem 0.05rem;
+    border-top: 0.03rem solid rgba(7, 27, 53, 0.6);
+}
+
+.iselectList table td:first-child {
+    border-radius: 0.1rem 0 0 0.1rem;
+}
+
+.iselectList table td:last-child {
+    border-radius: 0 0.1rem 0.1rem 0;
+}
+
+.videoInfoPanel {
+    width: 10.76rem;
+    height: 7.26rem;
+    background: url(../imgs/rankbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 1.2rem 0.5rem;
+}
+
+.videoInfoPanel .title {
+    text-align: center;
+    font-size: 0.3rem;
+    color: rgba(36, 222, 223, 1);
+    padding-bottom: 0.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    margin-bottom: 0.2rem;
+}
+
+.videoMarkers img {
+    width: 0.5rem;
+    height: 0.66rem;
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(0.8, 0.8);
+}
+
+.videoMarkers.active img {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.basicEventNumber {
+    width: 7.2rem;
+    position: absolute;
+    top: 2rem;
+    left: 6rem;
+}
+
+.basicEventNumber>div {
+    width: 2.28rem;
+    height: 1.26rem;
+    background-color: rgba(61, 191, 191, 0.24);
+    border-radius: 0.1rem;
+}
+
+.basicEventNumber div div:nth-child(1) {
+    font-size: 0.18rem;
+    color: rgba(0, 168, 255, 1);
+}
+
+.basicEventNumber div div:nth-child(2) {
+    font-size: 0.45rem;
+    font-weight: bold;
+}
+
+.basicEventNumber>div:nth-child(2),
+.basicEventNumber>div:nth-child(3) {
+    cursor: pointer;
+}
+
+.basicEventNumber div:nth-child(1) div:nth-child(2) {
+    color: rgba(255, 255, 255, 1);
+}
+
+.basicEventNumber div:nth-child(2) div:nth-child(2) {
+    color: rgba(216, 148, 93, 1);
+}
+
+.basicEventNumber div:nth-child(3) div:nth-child(2) {
+    color: rgba(119, 135, 147, 1);
+}
+
+.meetChatBtn {
+    width: 1.55rem;
+    height: 0.42rem;
+    background-image: linear-gradient(36deg,
+            rgba(56, 248, 212, 0.88) 0%,
+            rgba(67, 234, 128, 0.88) 100%),
+        linear-gradient(rgba(221, 164, 11, 0.88),
+            rgba(221, 164, 11, 0.88));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    font-size: 0.24rem;
+    color: rgba(2, 15, 79, 1);
+    line-height: 0.42rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.meetChatPanel {
+    width: 10.76rem;
+    height: 7.26rem;
+    background: url(../imgs/rankbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.5rem 0.6rem;
+    position: relative;
+}
+
+.addMeetChatPerson {
+    width: 1.37rem;
+    height: 0.37rem;
+    background-image: linear-gradient(36deg,
+            rgba(0, 242, 254, 0.88) 0%,
+            rgba(79, 172, 254, 0.88) 100%),
+        linear-gradient(rgba(221, 164, 11, 0.88),
+            rgba(221, 164, 11, 0.88));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    margin-right: 0.16rem;
+    font-size: 0.2rem;
+    color: rgba(2, 15, 79, 1);
+    cursor: pointer;
+    text-align: center;
+    line-height: 0.37rem;
+}
+
+.sendMeetChatMsg {
+    width: 1.37rem;
+    height: 0.37rem;
+    background-image: linear-gradient(36deg,
+            rgba(251, 112, 153, 0.88) 0%,
+            rgba(254, 220, 69, 0.88) 100%),
+        linear-gradient(rgba(221, 164, 11, 0.88),
+            rgba(221, 164, 11, 0.88));
+    background-blend-mode: normal,
+        normal;
+    border-radius: 0.1rem;
+    font-size: 0.2rem;
+    color: rgba(2, 15, 79, 1);
+    cursor: pointer;
+    text-align: center;
+    line-height: 0.37rem;
+}
+
+.meetChatTitle img {
+    width: 1.07rem;
+    height: 0.16rem;
+    margin-right: 0.2rem;
+}
+
+.meetChatTitle span {
+    font-size: 0.2rem;
+    color: rgba(61, 128, 159, 1);
+}
+
+.chatHead {
+    width: 0.6rem;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    background-color: rgba(0, 228, 255, 1);
+    border-radius: 0.1rem;
+    font-size: 0.25rem;
+    color: rgba(10, 33, 79, 1);
+}
+
+.chatInfo>div:nth-child(1) span {
+    font-size: 0.16rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.chatInfo>div:nth-child(1) .name {
+    font-size: 0.16rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.chatOne {
+    padding: 0.2rem;
+}
+
+.chatOne .chatHead {
+    margin-right: 0.2rem;
+}
+
+.chatOne.box-pack-right .chatHead {
+    margin-left: 0.2rem;
+    margin-right: 0;
+}
+
+.chatContent {
+    background-color: #fff;
+    border-radius: 0.1rem;
+    max-width: 5rem;
+    padding: 0.2rem;
+    font-size: 0.18rem;
+    color: #000;
+    margin-top: 0.1rem;
+    display: inline-block;
+}
+
+.chatOtherInfo div {
+    font-size: 0.18rem;
+    color: rgba(61, 128, 159, 1);
+    background-color: rgba(0, 228, 255, 0.05);
+    border-radius: 0.1rem;
+    padding: 0.1rem;
+}
+
+.chatOtherInfo {
+    padding: 0.2rem;
+}
+
+.meetChatList {
+    margin: 0.2rem 0;
+    overflow-y: auto;
+}
+
+.chatMsgBackBtn {
+    width: 0.36rem !important;
+    height: 0.36rem !important;
+    cursor: pointer;
+}
+
+.sendMsgBtn div {
+    width: 2.51rem;
+    height: 0.48rem;
+    background-color: rgba(0, 228, 255, 1);
+    border-radius: 0.1rem;
+    font-size: 0.18rem;
+    color: rgba(11, 35, 84, 1);
+    text-align: center;
+    line-height: 0.48rem;
+    cursor: pointer;
+}
+
+.msgPanel {
+    height: 4.37rem;
+    background-color: rgba(0, 228, 255, 0.1);
+    border-radius: 0.1rem;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.sendMsgBtn {
+    padding: 0.2rem;
+}
+
+.sendImgs {
+    padding-top: 0.3rem;
+    margin-top: 0.3rem;
+    border-top: solid 1px rgba(44, 203, 254, 0.2);
+}
+
+.sendImgs img {
+    width: 0.83rem;
+    height: 0.83rem;
+}
+
+.sendMsgPanel {
+    height: 100%;
+}
+
+.sendMsgPanel textarea {
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
+.meetChatAddPanel {
+    background: url(../imgs/gridShowPanel.png) no-repeat center center;
+    background-size: 100% 100%;
+    width: 14.99rem;
+    height: 7.24rem;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.hasPersons {
+    padding: 0.5rem 0 0.3rem;
+}
+
+.hasPersons>div:nth-child(1) {
+    font-size: 0.18rem;
+    color: rgba(61, 128, 159, 1);
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    text-align: right;
+}
+
+.hasPersons>div:nth-child(2) div img {
+    width: 0.16rem;
+    height: 0.16rem;
+    cursor: pointer;
+}
+
+.hasPersons>div:nth-child(2) div span {
+    font-size: 0.18rem;
+    color: rgba(255, 255, 255, 1);
+    margin-right: 0.1rem;
+}
+
+.hasPersons>div:nth-child(2) div {
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.personSearchBar>div:nth-child(1) {
+    font-size: 0.18rem;
+    color: rgba(61, 128, 159, 1);
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    text-align: right;
+}
+
+.personSearchBar .searchInput {
+    width: 2.98rem;
+    height: 0.41rem;
+    background-color: rgba(0, 228, 255, 1);
+    border-radius: 0.1rem;
+    opacity: 0.1;
+    border: 1px solid rgba(0, 228, 255, 1);
+    margin-right: 0.2rem;
+}
+
+.searchBtn {
+    width: 1.24rem;
+    height: 0.41rem;
+    background-color: rgba(0, 228, 255, 1);
+    border-radius: 0.1rem;
+    font-size: 0.18rem;
+    color: rgba(2, 15, 79, 1);
+    line-height: 0.41rem;
+    text-align: center;
+}
+
+.personList {
+    margin: 0.2rem 0;
+    overflow-y: auto;
+}
+
+.personList table {
+    width: 100%;
+}
+
+.personList table th {
+    font-size: 0.18rem;
+    color: rgba(224, 225, 225, 0.6);
+    position: sticky;
+    top: 0;
+    padding: 0.15rem;
+    background: #071b35;
+}
+
+.personList td {
+    border-top: 0.03rem solid transparent;
+}
+
+.personList td div {
+    text-align: center;
+    font-size: 0.18rem;
+    color: rgba(232, 232, 232, 1);
+    padding: 0.15rem;
+}
+
+.personList tr:nth-child(2n-1) td div {
+    background-color: rgba(39, 105, 150, 0.8);
+}
+
+.personList tr:nth-child(2n) td div {
+    background-color: rgba(39, 105, 150, 0.55);
+}
+
+.eventsearchBar {
+    padding: 0 0 0.1rem;
+}
+
+.eventsearchBar input[type="checkbox"] {
+    color: #24dedf;
+    margin-right: 0.1rem;
+}
+
+.eventsearchBar span {
+    color: #24dedf;
+    font-size: 0.16rem;
+}
+
+.eventsearchBar select {
+    border: 0.01rem solid #24dedf;
+    color: #24dedf;
+    font-size: 0.16rem;
+    background: #0f2656;
+    height: 0.27rem;
+    padding: 0 0.05rem;
+    border-radius: 0.05rem;
+}
+
+.eventsearchBar input[type="text"] {
+    background: transparent;
+    border: 0.01rem solid #24dedf;
+    border-radius: 0.05rem 0 0 0.05rem;
+    color: #24dedf;
+    font-size: 0.16rem;
+    padding: 0 0.1rem;
+    width: 2.5rem;
+    height: 0.29rem;
+}
+
+.eventsearchBar span.eventSearchBtn {
+    padding: 0 0.1rem;
+    background: transparent;
+    border: 0.01rem solid #24dedf;
+    border-radius: 0 0.05rem 0.05rem 0;
+    color: #24dedf;
+    font-size: 0.16rem;
+    height: 0.27rem;
+    line-height: 0.27rem;
+    cursor: pointer;
+}
+
+.eventFinishInfo {
+    padding-bottom: 0.1rem !important;
+}
+
+.eventFinishInfo>div {
+    font-size: 0.2rem;
+    color: #24dedf;
+    padding-bottom: 0.1rem !important;
+    text-align: center;
+}
+
+.eventFinishInfo textarea {
+    border-radius: 0.2rem;
+    border: 1px solid #24dedf;
+    background: transparent;
+    color: #24dedf;
+    width: 7rem;
+    height: 1.5rem;
+    font-size: 0.16rem;
+    padding: 0.2rem;
+}
+
+.videoNoHas img {
+    width: 8.62rem;
+    height: 4.63rem;
+
+}
+
+.videoNoHas div {
+    font-size: 0.25rem;
+    font-weight: bold;
+    padding-top: 0.2rem;
+    color: #fff;
+}
+
+.videoNoHas {
+    background: transparent !important;
+    pointer-events: none;
+}
+
+.basicAnalysisLoadingbg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.basicAnalysisLoadingbg img {
+    width: 1rem !important;
+    height: 1rem !important;
+}
+
+.villagePeopleBtn {
+    padding-top: 0.2rem;
+
+}
+
+.villagePeopleBtn div {
+    width: 1.4rem;
+    height: 0.33rem;
+    background-image: linear-gradient(-69deg, rgba(0, 242, 254, 0.8) 0%, rgba(79, 172, 254, 0.8) 100%), linear-gradient(rgba(98, 196, 218, 0.8), rgba(98, 196, 218, 0.8));
+    background-blend-mode: normal, normal;
+    border-radius: 0.05rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 0.33rem;
+    cursor: pointer;
+    font-size: 0.22rem;
+    margin-left: 0.2rem;
+}
+
+.villagePeoplePanel {
+    background: url(../imgs/gridShowPanel.png) no-repeat center center;
+    background-size: 100% 100%;
+    width: 14.99rem;
+    height: 7.24rem;
+    position: relative;
+    padding: 0.44rem 0.5rem 0.5rem;
+}
+
+.villagePeoplePanel>div:nth-child(2) {
+    position: relative;
+    text-align: center;
+    color: rgba(36, 222, 223, 1);
+    font-size: 0.3rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    padding-bottom: 0.32rem;
+}
+
+/* .villagePeopleInfoList th {
+    background: #071b35;
+    padding: 0.1rem;
+    color: #24dedf;
+    text-align: center;
+    font-size: 0.18rem;
+    position: sticky;
+    top: 0;
+}
+
+.villagePeopleInfoList table {
+    width: 100%;
+}
+
+.villagePeopleInfoList {
+    overflow-y: auto;
+}
+
+.villagePeopleInfoList td {
+    text-align: center;
+    background-color: rgba(39, 105, 150, 0.8);
+    padding: 0.1rem;
+    font-size: 0.18rem;
+    color: rgb(216, 216, 216);
+}
+
+.villagePeopleInfoList tr.active td {
+    border-top: 0.05rem solid #071b56;
+
+} */
+
+.chatContent img {
+    max-width: 3rem;
+    max-height: 5rem;
+}
+
+.addMeetChatOther {
+    width: 1.37rem;
+    height: 0.37rem;
+    background-image: linear-gradient(36deg, rgba(0, 242, 254, 0.88) 0%, rgba(79, 172, 254, 0.88) 100%), linear-gradient(rgba(221, 164, 11, 0.88), rgba(221, 164, 11, 0.88));
+    background-blend-mode: normal, normal;
+    border-radius: 0.1rem;
+    margin-left: 0.16rem;
+    font-size: 0.2rem;
+    color: rgba(2, 15, 79, 1);
+    cursor: pointer;
+    text-align: center;
+    line-height: 0.37rem;
+}
+
+.layui-upload-file {
+    display: none;
+}
+
+.chatContent video {
+    max-width: 5rem;
+    max-height: 5rem;
+}
+
+.newChatNum {
+    position: absolute;
+    left: 0.3rem;
+    bottom: 0.4rem;
+    background: #2183d8;
+    border: 0.02rem solid #fff;
+    border-radius: 0.1rem;
+    color: #fff;
+    padding: 0.05rem 0.1rem;
+    cursor: pointer;
+}
+
+.meetChatList {
+    position: relative;
+}
+
+.emojisImg {
+    width: 0.3rem;
+    height: 0.3rem;
+}
+
+.chatVoice {
+    cursor: pointer;
+}
+
+.chatVoice span:last-child {
+    font-size: 0.2rem;
+    margin-left: 0.1rem;
+    font-weight: bold;
+}
+
+.chatVoice img {
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-right: 0.1rem;
+}
+
+.historySee {
+    text-align: center;
+    font-size: 0.25rem;
+    color: #24dedf;
+    cursor: pointer;
+}
+
+#eventInfoMap {
+    width: 4rem;
+    height: 3rem;
+    margin-top: 0.2rem;
+}
+
+.addImg {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.eventFinishImgs {
+    padding: 0.2rem 0.1rem;
+}
+
+.eventFinishImgs div {
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+}
+
+.imgClose {
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: -0.1rem;
+    right: -0.1rem;
+    cursor: pointer;
+}
+
+.showImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+
+.eventFinishImgs div {
+    margin-right: 0.2rem;
+
+}
+
+.historyImg {
+    padding: 0.2rem 0;
+}
+
+.historyImg img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.2rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.picPreview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.picPreview img {
+    max-width: 10rem;
+    max-height: 8rem;
+}
+
+.previewLeft {
+    position: absolute;
+    left: 1.3rem;
+    top: 5rem;
+    width: 1.16rem;
+    height: 0.46rem;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.previewRight {
+    position: absolute;
+    right: 1.3rem;
+    top: 5rem;
+    width: 1.16rem;
+    height: 0.46rem;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.bmfwSelects select {
+    margin: 0;
+}
+
+.bmfwSelects {
+    margin-bottom: 0.2rem;
+}
+
+.bmfwsearchBar {
+    padding: 0 0.1rem 0.2rem;
+}
+
+.bmfwsearchBar input[type="text"] {
+    width: 2.5rem;
+}
+
+.acOtherPanel {
+    overflow-y: auto;
+}
+
+.orgInfoActDayPanel {
+    position: relative;
+    background: url(../imgs/eventContentBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    width: 6.5rem;
+    height: 3.85rem;
+    padding: 0.5rem;
+}
+
+.orgInfoActDayList {
+    overflow-y: auto;
+}
+
+.orgInfoActDayList div {
+    color: #fff;
+    font-size: 0.2rem;
+    padding: 0.1rem;
+}
+
+.orgInfoActDayList div.listOne {
+    color: #fff;
+    font-size: 0.2rem;
+    padding: 0.1rem;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 204, 255, 0.81);
+}
+
+.orgInfoActDayList div.listOne:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.itemtype {
+    color: #24dedf;
+    margin-left: 0.1rem;
+    font-size: 0.15rem;
+}
+
+.swiper-container {
+    height: 4.67rem !important;
+}
+
+.videoPanel {
+    padding-top: 0.2rem;
+}
+
+.videoPanel video {
+    max-width: 8.08rem;
+    max-height: 4.67rem;
+}
+
+.filePanel {
+    padding-top: 0.2rem;
+    max-height: 4.67rem;
+    overflow-y: auto;
+}
+
+.filePanel>div {
+    padding: 0.2rem;
+    border-bottom: 1px solid #24dedf;
+    color: #24dedf;
+    text-align: center;
+    font-size: 0.2rem;
+}
+
+.filePanel>div>div:nth-child(1) {
+    margin-right: 0.2rem;
+    cursor: pointer;
+}
+
+.filePanel>div>div:nth-child(1):hover {
+    text-decoration: underline;
+}
+
+.filePanel>div>div:nth-child(2) {
+    border: 1px solid #24dedf;
+    padding: 0 0.1rem;
+    border-radius: 0.05rem;
+    cursor: pointer;
+}
+
+.leavFlowTabs {
+    border-bottom: 0.02rem solid #4facfe;
+}
+
+.leavFlowTabs div {
+    background: #122769;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.15rem;
+    color: #4facfe;
+    border-radius: 0.1rem 0.1rem 0 0;
+    margin-right: 0.1rem;
+    cursor: pointer;
+}
+
+.leavFlowTabs div.active {
+    background: #4facfe;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.15rem;
+    color: #122769;
+}
+
+.leaveMsgPanel textarea {
+    border-radius: 0.2rem;
+    border: 1px solid #24dedf;
+    background: transparent;
+    color: #24dedf;
+    width: 100%;
+    height: 1.2rem;
+    font-size: 0.16rem;
+    padding: 0.2rem;
+}
+
+.leaveMsgPanel {
+    padding-top: 0.2rem;
+}
+
+.leaveMsgPanel div {
+    width: 1.55rem;
+    height: 0.35rem;
+    background-image: linear-gradient(36deg, rgba(0, 242, 254, 0.85) 0%, rgba(79, 172, 254, 0.85) 100%), linear-gradient(rgba(221, 164, 11, 1), rgba(221, 164, 11, 1));
+    background-blend-mode: normal, normal;
+    border-radius: 0.1rem;
+    margin-top: 0.2rem;
+    font-size: 0.2rem;
+    color: rgba(2, 15, 79, 1);
+    line-height: 0.35rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.leaveMsgList {
+    overflow-y: auto;
+}
+
+.leaveMsgList .time {
+    text-align: left;
+    color: #fff;
+    font-size: 0.15rem;
+}
+
+.leaveMsgList .my .time {
+    text-align: right;
+}
+
+.leaveMsgList .head {
+    height: 0.2rem;
+    text-align: center;
+    padding: 0 0.1rem;
+    line-height: 0.2rem;
+    background-color: rgba(0, 228, 255, 1);
+    border-radius: 0.1rem;
+    font-size: 0.15rem;
+    color: rgba(10, 33, 79, 1);
+    margin: 0 0.1rem;
+}
+
+
+.leaveMsgList .content {
+    background-color: rgba(0, 228, 255, 0.2);
+    border-radius: 0.1rem;
+    padding: 0.1rem;
+    font-size: 0.15rem;
+    color: rgba(255, 255, 255, 1);
+    margin: 0.1rem 0.2rem;
+    display: inline-block;
+    max-width: 3rem;
+}
+
+.lookFileInfoPanel {
+    width: 17.76rem;
+    height: 8.63rem;
+    background: url(../imgs/orgInfoBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.5rem;
+}
+
+.lookFileInfoPanel iframe {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.basicEventChart2ListPanel {
+    width: 5.17rem;
+    height: 8.19rem;
+    background: url(../imgs/eventListBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.2rem 0.4rem 0.3rem;
+    position: relative;
+}
+
+.basicEventChart2ListPanel .title {
+    padding: 0 0 0.1rem;
+    color: #62c4da;
+    font-size: 0.20rem;
+}
+
+.basicEventChart2ListPanel .title img {
+    width: 1.07rem;
+    margin-right: 0.2rem;
+    height: 0.16rem;
+}
+
+#basicEventChart2ListChart {
+    width: 100%;
+    height: 2.64rem;
+}
+
+.warningPanel {
+    width: 10.76rem;
+    height: 7.26rem;
+    background: url(../imgs/rankbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 1.2rem 0.5rem;
+    position: relative;
+}
+
+.townMarker.active div:nth-child(1) {
+    color: red !important;
+}
+
+.townMarker.active div:nth-child(2) {
+    background: red !important;
+}
+
+.rankLine>img {
+    width: 0.2rem;
+    height: 0.21rem;
+    margin-right: 0.09rem;
+}
+
+.RankMorePoint {
+    cursor: pointer;
+    height: 0.8rem;
+}
+
+.RankMorePoint div {
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    margin-top: 0.1rem;
+    background: rgba(36, 222, 223, 1);
+
+}
+
+.RankMorePoint div:last-child {
+    margin-right: 0;
+}
+
+.rankLine .orgName {
+    font-size: 0.18rem;
+    color: rgba(114, 167, 210, 1);
+    top: 0.6rem;
+    left: 0.5rem;
+    width: 1.5rem;
+    position: absolute;
+}
+
+.rankLine {
+    position: relative;
+    margin: 0 0.1rem;
+    left: 0.3rem;
+    width: 2rem;
+}
+
+.rankLine .rankScore {
+    padding: 0 0 0.4rem 0.2rem;
+    width: 1.2rem;
+    height: 1rem;
+    background: url(../imgs/orgRankFlag.png) no-repeat center center;
+    background-size: 100% 100%;
+    font-size: 0.2rem;
+    transform: scale(0.8, 0.8);
+}
+
+.rankLine .rankScore div:nth-child(1) {
+    font-size: 0.18rem;
+    color: rgba(240, 204, 35, 1);
+    border-bottom: 1px solid rgba(240, 204, 35, 0.24);
+}
+
+.rankLine .rankScore div:nth-child(1) img {
+    width: 0.18rem;
+    height: 0.19rem;
+}
+
+.rankLine .rankScore div:nth-child(2) {
+    font-size: 0.21rem;
+    color: #fff;
+}
+
+.personrankLine {
+    margin: 0 0.1rem;
+    position: relative;
+    left: 0.7rem;
+}
+
+.personrankLine>div>img {
+
+    width: 0.32rem;
+    height: 0.41rem;
+}
+
+.personrankLine>div:nth-child(1) {
+
+    margin-right: 0.1rem;
+}
+
+
+.personrankLine .nameCN {
+    font-size: 0.22rem;
+    color: rgba(0, 240, 255, 1);
+}
+
+.personrankLine .orgName {
+    font-size: 0.16rem;
+    color: rgba(114, 167, 210, 1);
+}
+
+.personrankLine .rankScore {
+    margin-top: 0.05rem;
+    width: 0.65rem;
+    height: 0.57rem;
+    border: solid 0.01rem rgba(0, 240, 255, 0.5);
+    font-size: 0.2rem;
+    color: rgba(0, 240, 255, 1);
+    text-align: center;
+    border-radius: 50%;
+}
+
+.personrankLine .rankScore div:nth-child(1) {
+    font-size: 0.14rem;
+    color: rgba(240, 204, 35, 1);
+    border-bottom: 1px solid rgba(0, 240, 255, 0.24);
+}
+
+.personrankLine .rankScore div:nth-child(1) img {
+    width: 0.11rem;
+    height: 0.12rem;
+}
+
+.personrankLine .rankScore div:nth-child(2) {
+    font-size: 0.14rem;
+    color: rgba(0, 240, 255, 1);
+}
+
+.stcListTd {
+    cursor: pointer;
+}
+
+.stcListTd:hover {
+    text-decoration: underline;
+}
+
+.BmfwStcListPanel {
+    width: 5.17rem;
+    height: 8.19rem;
+    background: url(../imgs/eventListBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.2rem 0.3rem 0.2rem;
+    position: relative;
+}
+
+.PartyPieChartInfoPanel {
+    width: 10.76rem;
+    height: 7.26rem;
+    background: url(../imgs/rankbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 0.5rem 0.5rem;
+    position: relative;
+}
+
+.PartyPieChartInfoPanel .title {
+    font-size: 0.3rem;
+    color: #24dedf;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    padding-bottom: 0.32rem;
+    text-align: center;
+}
+
+.PartyPieChartInfoPanel .PartyPieChartInfoList {
+    margin: 0.1rem 0;
+    overflow-y: auto;
+}
+
+.PartyPieChartInfoList table {
+    width: 100%;
+}
+
+.PartyPieChartInfoList th {
+    background: #0d2e59;
+    height: 0.56rem;
+    font-size: 0.18rem;
+    color: rgba(224, 225, 225, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+}
+
+.PartyPieChartInfoList td {
+    color: rgba(232, 232, 232, 1);
+    font-size: 0.18rem;
+    text-align: center;
+    padding: 0.1rem;
+    border-top: 0.03rem solid #0d2e59;
+}
+
+.PartyPieChartInfoList td:nth-child(1) {
+    width: 5rem;
+}
+
+.PartyPieChartInfoList tr:nth-child(2n-1) td {
+    background: rgba(39, 105, 150, 0.8);
+}
+
+.PartyPieChartInfoList tr:nth-child(2n) td {
+    background: rgba(39, 105, 150, 0.55);
+}
+
+.orgRankEasyPanel,
+.personRankEasyPanel {
+    padding: 0.8rem 0;
+    height: 6.78rem;
+    background: url(../imgs/PyramidBg.png) no-repeat center center;
+    background-size: 8.89rem 5.18rem;
+}
+
+.warningList {
+    overflow-y: auto;
+    padding-right: 0.1rem;
+}
+
+.warningList>div {
+    margin-bottom: 0.1rem;
+}
+
+.warningList>div>div:nth-child(1) {
+    font-size: 0.18rem;
+    color: #c15c63;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 0.47rem;
+    line-height: 0.47rem;
+    text-overflow: ellipsis;
+    padding: 0 0.2rem;
+    background-color: rgba(156, 71, 77, 0.15);
+    border-radius: 0.1rem 0 0 0.1rem;
+}
+
+.warningList>div.active>div:nth-child(1) {
+    color: #c3a13d;
+    background-color: rgba(164, 133, 41, 0.15);
+}
+
+.warningList>div>div:nth-child(2) {
+    color: #c15c63;
+    font-size: 0.18rem;
+    padding: 0 0.1rem;
+    height: 0.47rem;
+    line-height: 0.47rem;
+    width: 2rem;
+    background-color: rgb(156, 71, 77, 0.15);
+
+}
+
+.warningList>div.active>div:nth-child(2) {
+    color: #c3a13d;
+    background-color: rgba(164, 133, 41, 0.15);
+}
+
+.warningList>div>div:nth-child(3) {
+    width: 0.79rem;
+    height: 0.47rem;
+    background-color: rgb(156, 71, 77);
+    border-radius: 0rem 0.1rem 0.1rem 0rem;
+    text-align: center;
+    line-height: 0.47rem;
+    font-size: 0.18rem;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.warningList>div.active>div:nth-child(3) {
+    background-color: rgb(164, 133, 41);
+}
+
+.warningPanel .title {
+    font-size: 0.3rem;
+    color: #24dedf;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    padding-bottom: 0.32rem;
+    position: relative;
+}
+
+.warningPanel .title div {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.warningPanel .title div span {
+    font-size: 0.22rem;
+    color: rgba(19, 103, 126, 1);
+    margin-right: 0.2rem;
+}
+
+.warningPanel .title div select {
+    width: 1.94rem;
+    height: 0.45rem;
+    background-color: #0d2e59;
+    border-radius: 0.1rem;
+    color: #24dedf;
+    border: none;
+    font-size: 0.22rem;
+}
+
+.warningTabs {
+    padding: 0.2rem;
+
+}
+
+.warningTabs div {
+    color: rgba(36, 222, 223, 0.6);
+    font-size: 0.23rem;
+    height: 0.37rem;
+    line-height: 0.37rem;
+    cursor: pointer;
+    border-radius: 0.19rem;
+    padding: 0 0.2rem;
+}
+
+.warningTabs div.active {
+    background-color: rgba(36, 222, 223, 0.6);
+    color: rgb(16 16 16);
+}
+
+.pieOnHOver {
+    cursor: pointer;
+
+}
+
+.pieOnHOver:hover {
+    text-decoration: underline;
+}
+
+.personNameStar {
+    padding-right: 0.1rem;
+}
+
+.personNameStar .orgName {
+    margin-right: 0;
+    margin-bottom: 0.1rem;
+}
+
+.personNameStar div:nth-child(2) {
+    color: rgba(0, 240, 255, 1);
+    font-size: 0.18rem;
+}
+
+.villageGridtable>div>img {
+    width: 1.06rem;
+    height: 1.29rem;
+    background-color: rgba(217, 36, 36, 1);
+    border-radius: 0.1rem;
+}
+
+.villageGridtable>div>div:nth-child(2),
+.villageGridtable>div>div:nth-child(4) {
+    font-size: 0.18rem;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 0.1rem;
+}
+
+.villageGridtable>div>div:nth-child(2) img {
+    width: 0.17rem;
+    height: 0.17rem;
+    margin-right: 0.05rem;
+    margin-bottom: 0;
+}
+
+.villageGridtable>div>div:nth-child(3) {
+    font-size: 0.18rem;
+    color: rgba(15, 189, 221, 1);
+    margin-bottom: 0.1rem;
+}
+
+.villageGridtable>div {
+    margin-right: 0.1rem;
+    width: 1.17rem;
+    padding-top: 0.2rem;
+}
+
+.villageGridtable>div:nth-child(4) {
+    margin-right: 0;
+}
+
+.rankTitle select {
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    height: 0.45rem;
+    background-color: #0d2e59;
+    border-radius: 0.1rem;
+    font-size: 0.2rem;
+    color: rgba(0, 217, 234, 1);
+    border: none;
+    padding: 0 0.2rem 0 0.1rem;
+}
+
+.villageAllPeopleCount {
+    font-size: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+.villagePeopleSearch input {
+    background: transparent;
+    border: 0.01rem solid #24dedf;
+    border-radius: 0.2rem 0 0 0.2rem;
+    color: #24dedf;
+    font-size: 0.16rem;
+    padding: 0 0.1rem;
+    width: 2.5rem;
+    height: 0.42rem;
+}
+
+.villagePeopleSearch span.eventSearchBtn {
+    padding: 0 0.1rem;
+    background: transparent;
+    border: 0.01rem solid #24dedf;
+    border-radius: 0 0.2rem 0.2rem 0;
+    color: #24dedf;
+    font-size: 0.16rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    cursor: pointer;
+}
+
+.villagePeopleSearch {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.eventIconListPanel {
+    padding: 0 0.2rem 0.2rem;
+    background-color: rgba(13, 66, 131, 0.5);
+    border-radius: 0.1rem;
+    position: absolute;
+    width: 1.6rem;
+    top: 2.37rem;
+    left: 17.3rem;
+}
+
+.eventIconListPanel .eventIcontitle {
+    font-size: 0.20rem;
+    color: rgba(255, 255, 255, 1);
+    padding: 0.2rem 0 0.1rem;
+}
+
+.eventIconListPanel .eventIconList {
+    padding-left: 0.1rem;
+    height: 0.5rem;
+}
+
+.eventIconListPanel .eventIconList img {
+    width: 0.20rem;
+    height: 0.41rem;
+    margin-right: 0.1rem;
+}
+
+.eventIconListPanel .eventIconList img.active {
+    width: 0.20rem;
+    height: 0.25rem;
+}
+
+.eventIconListPanel .eventIconList span {
+    font-size: 0.18rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.gridFrameWorkPanel {
+    width: 13.89rem;
+    height: 9rem;
+    background: url(../imgs/rankbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 0.5rem 0.5rem;
+    position: relative;
+}
+
+.gridFrameWorkPanel .title {
+    text-align: center;
+    font-size: 0.3rem;
+    color: rgba(36, 222, 223, 1);
+    font-weight: bold;
+    border-bottom: 1px solid rgba(36, 222, 223, 0.3);
+    padding-bottom: 0.32rem;
+    position: relative;
+}
+
+.frameWorkLeaderList .frameWorkLeaderInfo {
+    padding: 0 0.2rem;
+    height: 1rem;
+    background-color: rgba(31, 96, 147, 0.5);
+    border-radius: 0.1rem;
+}
+
+.frameWorkLeaderList .frameWorkLeaderInfo>div {
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.frameWorkLeaderList .frameWorkLeaderInfo>div:nth-child(1) {
+    font-size: 0.25rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.frameWorkLeaderList .frameWorkLeaderInfo>div:nth-child(1) span {
+
+    color: rgba(36, 222, 223, 1);
+}
+
+.frameWorkLeaderList .frameWorkLeaderInfo>div:nth-child(2),
+.frameWorkLeaderList .frameWorkLeaderInfo>div:nth-child(3) {
+    font-size: 0.2rem;
+    margin-top: 0.02rem;
+    color: rgba(167, 167, 167, 1);
+}
+
+.frameWorkGridList>div {
+    position: relative;
+    padding: 0 0.2rem;
+}
+
+.frameWorkGridList .frameWorkMemberLeaderInfo {
+    padding: 0 0.1rem;
+    height: 0.97rem;
+    background-color: rgba(31, 96, 147, 0.5);
+    border-radius: 0.1rem;
+}
+
+.frameWorkGridList .frameWorkMemberLeaderInfo>div {
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.frameWorkGridList .frameWorkMemberLeaderInfo>div:nth-child(1) {
+    font-size: 0.22rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.frameWorkGridList .frameWorkMemberLeaderInfo>div:nth-child(1) span {
+
+    color: rgba(36, 222, 223, 1);
+}
+
+.frameWorkGridList .frameWorkMemberLeaderInfo>div:nth-child(2),
+.frameWorkGridList .frameWorkMemberLeaderInfo>div:nth-child(3) {
+    font-size: 0.18rem;
+    margin-top: 0.02rem;
+    color: rgba(167, 167, 167, 1);
+}
+
+.frameworkVLine {
+    width: 2px;
+    background: rgba(31, 96, 147, 1);
+}
+
+
+.frameWorkGridListOut {
+    overflow-x: auto;
+}
+
+.frameworkGridMemberList>div {
+    position: relative;
+    padding: 0 0.17rem;
+}
+
+.frameworkhLine {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(31, 96, 147, 1);
+}
+
+.frameWorkGridList>div:first-child>.frameworkhLine {
+    width: 50%;
+    left: 50%;
+}
+
+.frameWorkGridList>div:last-child>.frameworkhLine {
+    width: 50%;
+}
+
+.frameworkGridMemberList>div:first-child>.frameworkhLine {
+    width: 50%;
+    left: 50%;
+}
+
+.frameworkGridMemberList>div:last-child>.frameworkhLine {
+    width: 50%;
+}
+
+
+.frameworkGridMemberList .frameWorkMemberInfo.active {
+    cursor: pointer;
+}
+
+.frameWorkVillagePanel .frameWorkMemberInfo,
+.frameworkGridMemberList .frameWorkMemberInfo {
+    padding: 0 0.1rem;
+    height: 0.97rem;
+    background-color: rgba(31, 96, 147, 0.5);
+    border-radius: 0.1rem;
+}
+
+.frameWorkVillagePanel .frameWorkMemberInfo>div,
+.frameworkGridMemberList .frameWorkMemberInfo>div {
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.frameWorkVillagePanel .frameWorkMemberInfo>div:nth-child(1),
+.frameworkGridMemberList .frameWorkMemberInfo>div:nth-child(1) {
+    font-size: 0.22rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.frameWorkVillagePanel .frameWorkMemberInfo>div:nth-child(1) span,
+.frameworkGridMemberList .frameWorkMemberInfo>div:nth-child(1) span {
+
+    color: rgba(36, 222, 223, 1);
+}
+
+.frameWorkVillagePanel .frameWorkMemberInfo>div:nth-child(2),
+.frameWorkVillagePanel .frameWorkMemberInfo>div:nth-child(3),
+.frameworkGridMemberList .frameWorkMemberInfo>div:nth-child(2),
+.frameworkGridMemberList .frameWorkMemberInfo>div:nth-child(3) {
+    font-size: 0.18rem;
+    margin-top: 0.02rem;
+    color: rgba(167, 167, 167, 1);
+}
+
+.frameWorkGridListOut {
+    padding-bottom: 0.5rem;
+}
+
+.frameWorkLeaderList {
+    padding-top: 0.3rem;
+}
+
+.frameWorkVillagePanel {
+    width: 8.6rem;
+    height: 5.57rem;
+    background: url(../imgs/rankbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 0.44rem 0.5rem 0.5rem;
+    position: relative;
+}
+
+.frameWorkVillagePeople {
+    width: 5.41rem;
+    height: 2.56rem;
+    background-color: rgba(31, 96, 147, 0.5);
+    border-radius: 0.1rem;
+    padding: 0.2rem;
+    overflow-y: auto;
+}
+
+.frameWorkVillagePeople div {
+    width: 1.65rem;
+    height: 0.5rem;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.18rem;
+    text-align: center;
+    padding: 0.1rem 0.05rem;
+}
+
+.frameWorkPhoneLine {
+    cursor: pointer;
+}
+
+.soundList div {
+    padding-bottom: 0.1rem;
+}
+
+.soundList div audio {
+    width: 4rem;
+    height: 0.3rem;
+}
+
+.vLog video {
+    max-width: 4rem;
+    max-height: 4rem;
+}
+
+.flowSound div {
+    padding-top: 0.1rem;
+}
+
+.flowSound audio {
+    width: 4rem;
+    height: 0.3rem;
+}
+
+.topOrg {
+    animation: topOrg 1.5s infinite linear;
+}
+
+.topPerson {
+    animation: topPerson 1.5s infinite linear;
+}
+
+@keyframes topPerson {
+    0% {
+        transform: scale(1, 1) translate(0, 0);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2) translate(0, -0.2rem);
+    }
+
+    100% {
+        transform: scale(1, 1) translate(0, 0);
+    }
+}
+
+@keyframes topOrg {
+    0% {
+        transform: scale(0.8, 0.8) translate(0, 0);
+    }
+
+    50% {
+        transform: scale(1, 1) translate(0, -0.2rem);
+    }
+
+    100% {
+        transform: scale(0.8, 0.8) translate(0, 0);
+    }
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: rgba(132, 249, 255, 0.714);
+}
+
+.PanelBottom .contentPanel {
+    overflow-y: auto;
+}
+
+.PanelBottom .contentPanel>img {
+    display: block;
+    margin: 0 auto 0.2rem;
+    max-width: 5rem;
+}
+
+.PanelBottom .otherInfoPanel {
+    width: 7rem;
+    padding-right: 0.5rem;
+    color: #ffffff;
+    font-size: 0.2rem;
+    overflow-y: auto;
+}
+
+.PanelBottom .otherInfoPanel>div {
+    padding-top: 0.2rem;
+}
+
+.PanelBottom .otherInfoPanel span {
+    color: #24dedf;
+}
+
+.smartActivityChartLoadingBg {
+    position: absolute;
+    left: 14.5rem;
+    top: 2.6rem;
+    width: 4.5rem;
+    height: 8rem;
+    z-index: 1;
+}
+
+.listHouse {
+    width: 1.29rem;
+    height: 1.2rem;
+    background: url(../imgs/listHouseBg.png) no-repeat center center;
+    background-size: 100% 100%;
+    font-size: 0.24rem;
+    color: rgba(36, 222, 223, 1);
+}
+
+.listHouse .active {
+    background: url(../imgs/listHouseBg_active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.onHousePeople {
+    width: 3.06rem;
+    background-color: #2e9afe;
+    border-radius: 0.1rem;
+    padding: 0.2rem;
+    position: absolute;
+    top: 1rem;
+    left: -0.855rem;
+    z-index: 1;
+}
+
+
+
+.onHousePeople>div {
+    font-size: 0.24rem;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 0.1rem;
+}
+
+.onHousePeople>div span:nth-child(1) {
+    height: 0.37rem;
+    line-height: 0.37rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0.1rem;
+    font-size: 0.24rem;
+    color: rgba(43, 143, 237, 1);
+    padding: 0 0.1rem;
+}
+
+.onHousePeople>div:nth-child(1) {
+    font-size: 0.24rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0.1rem;
+    margin-top: 0;
+}
+
+.peopleOne {
+    position: relative;
+    width: 1.29rem;
+    height: 1.2rem;
+    margin-right: 0.524rem;
+    margin-top: 0.4rem;
+    cursor: pointer;
+}
+
+.peopleOne:nth-child(8n) {
+    margin-right: 0;
+}
+
+.filePathList>div {
+    border: 1px solid #62c4da;
+    color: #62c4da;
+    font-size: 0.2rem;
+    padding: 0.05rem 0.1rem;
+    margin-right: 0.1rem;
+    border-radius: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.filePathList>div>div:nth-child(1) {
+    padding-right: 0.2rem;
+}
+
+.filePathList>div>div:nth-child(2) {
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.filePathList>div>div:nth-child(3) {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 0.1rem;
+}
+
+.psreload {
+    width: 0.3rem !important;
+    height: 0.3rem !important;
+    margin-left: 0.1rem;
+    cursor: pointer;
+}
+
+.activitySignList>div {
+    padding: 0.02rem 0.1rem;
+    font-size: 0.2rem;
+    color: #62c4da;
+    width: 5rem;
+}
+
+.activitySignList>div div:nth-child(1) {
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 0.2rem;
+    border-radius: 0.05rem;
+    height: 0.31rem;
+    line-height: 0.31rem;
+    margin-right: 0.1rem;
+    padding: 0 0.05rem;
+}
+
+.activitySignList>div div:nth-child(1).signtype2 {
+    color: #24dedf;
+    border: 1px solid #24dedf;
+}
+
+.activitySignList>div div:nth-child(1).signtype1 {
+    color: rgba(171, 171, 171, 1);
+    border: 1px solid rgba(171, 171, 171, 1);
+}
+
+.activitySignList>div div:nth-child(1).signtype3 {
+    background-color: rgba(247, 151, 0, 1);
+    color: rgba(247, 151, 0, 1);
+}
+
+.preViewImgOut {
+    width: 13rem;
+    height: 9rem;
+    overflow: auto;
+}
+
+.eventFaceImg {
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    border-radius: 50% !important;
+    margin-right: 0.1rem;
+}
+
+.basicRightListInfoLine {
+    font-size: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 0.1rem;
+}
+
+.basicRightListInfoLine span {
+    color: #2e9afe;
+}
+
+.personSpan {
+    width: 1.3rem;
+}
+
+.otherInfo i {
+    font-style: normal;
+    display: inline-block;
+    width: 1.2rem;
+    text-align: center;
+    padding-bottom: 0.1rem;
+}

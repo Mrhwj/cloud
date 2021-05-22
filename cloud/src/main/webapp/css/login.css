@@ -1,0 +1,301 @@
+@charset "utf-8";
+@font-face {
+    /*稳定用工激励平台管理*/
+    font-family: "YouSheBiaoTiHei-2";
+    src: url("../webFont/YouSheBiaoTiHei-2.eot"); /* IE9 */
+    src: url("../webFont/YouSheBiaoTiHei-2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("../webFont/YouSheBiaoTiHei-2.woff") format("woff"), /* chrome、firefox */
+    url("../webFont/YouSheBiaoTiHei-2.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("../webFont/YouSheBiaoTiHei-2.svg#YouSheBiaoTiHei-2") format("svg"); /* iOS 4.1- */
+}
+@font-face {
+    /*—嘉兴市秀洲区请输入账户名称密码验证获取*/
+    font-family: "Alibaba-PuHuiTi-Regular";
+    src: url("../webFont/Alibaba-PuHuiTi-Regular.eot"); /* IE9 */
+    src: url("../webFont/Alibaba-PuHuiTi-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("../webFont/Alibaba-PuHuiTi-Regular.woff") format("woff"), /* chrome、firefox */
+    url("Alibaba-PuHuiTi-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("../webFont/Alibaba-PuHuiTi-Regular.svg#Alibaba-PuHuiTi-Regular") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    /*欢迎登陆*/
+    font-family: "SourceHanSansCN-Bold";
+    src: url("../webFont/SourceHanSansCN-Bold.eot"); /* IE9 */
+    src: url("../webFont/SourceHanSansCN-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("../webFont/SourceHanSansCN-Bold.woff") format("woff"), /* chrome、firefox */
+    url("../webFont/SourceHanSansCN-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("../webFont/SourceHanSansCN-Bold.svg#SourceHanSansCN-Bold") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    /*登   录*/
+    font-family: "Alibaba-PuHuiTi-Bold";
+    src: url("../webFont/Alibaba-PuHuiTi-Bold.eot"); /* IE9 */
+    src: url("../webFont/Alibaba-PuHuiTi-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("../webFont/Alibaba-PuHuiTi-Bold.woff") format("woff"), /* chrome、firefox */
+    url("../webFont/Alibaba-PuHuiTi-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("../webFont/Alibaba-PuHuiTi-Bold.svg#Alibaba-PuHuiTi-Bold") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+a img,
+img {
+    border: none;
+}
+
+a {
+    background: transparent;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #292929;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+    color: #d40707;
+    outline: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+input {
+    line-height: normal;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+.placeholder {
+    color: #010101;
+    opacity: 0.6;
+    font-family: "Alibaba-PuHuiTi-Regular";
+}
+
+input:-webkit-input-placeholder {
+    color: #010101;
+    opacity: 0.6;
+    font-family: "Alibaba-PuHuiTi-Regular";
+}
+
+input:-moz-input-placeholder {
+    color: #010101;
+    opacity: 0.6;
+    font-family: "Alibaba-PuHuiTi-Regular";
+}
+
+input:-ms-input-placeholder {
+    color: #010101;
+    opacity: 0.6;
+    font-family: "Alibaba-PuHuiTi-Regular";
+}
+
+.clearFloat {
+    clear: both;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 1px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    text-align: center;
+    overflow-x: hidden;
+    font-family: "Microsoft Yahei", "微软雅黑", "STHeiti Light", "华文细黑", "SimSun", "宋体", Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 0rem;
+}
+.loginForm{
+    width: 15.18rem;
+    margin: 0 auto;
+    height: 8.65rem;
+    position: fixed;
+    left:50%;
+    top:50%;
+    margin-left: -7.59rem;
+    margin-top: -4.325rem;
+    z-index: 1;
+}
+.pc_header{
+    text-align: left;
+    margin-bottom: 0.36rem;
+}
+.pc_header .sys_name{
+    font-family: "YouSheBiaoTiHei-2";
+    font-size: 0.57rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.57rem;
+	letter-spacing: 0rem;
+    color: #ffffff;
+    vertical-align: middle;
+}
+.pc_header .sys_desc{
+    font-size: 0.35rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.35rem;
+	letter-spacing: 0rem;
+    color: #ffffff;
+    font-family: "Alibaba-PuHuiTi-Regular";
+    vertical-align: middle;
+    margin-left: 0.23rem;
+}
+.pc_content{
+    width: 15.18rem;
+    height: 7.72rem;
+    position: relative;
+}
+.pc_content .pc_form_main_bg{
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 1;
+    width: 100%;
+}
+.pc_content .pc_form{
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+.pc_form_leftSide,.pc_form_rightSide{
+    float: left;
+}
+.pc_form_leftSide{
+    padding-left: 1.34rem;
+    width: 6.55rem;
+    padding-top: 2.11rem;
+}
+.pc_form_leftSide img{width: 100%;}
+.pc_form_rightSide{width: 4.43rem;margin-left: 1.39rem;padding-top: 1.52rem;}
+.pc_form_rightSide h1{
+    font-size: 0.4rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.43rem;
+	letter-spacing: 0rem;
+    color: #007aff;
+    font-family: "SourceHanSansCN-Bold";
+    margin-bottom: 0.57rem;
+}
+.i-form .layui-input{
+    font-size: 0.2rem;
+	font-weight: normal;
+	font-stretch: normal;
+    color: #010101;
+    border: solid 0.02rem #dddddd;
+    height: 0.65rem;
+    border-radius: 0.04rem;
+    line-height: 0.65rem;
+}
+.i-form li{margin-bottom: 0.38rem;}
+.i-form li.code{
+    position: relative;
+}
+.admin-captcha{position: absolute;right: 0;top:0;z-index: 10;width: auto;height: 100%;}
+.admin-button{
+    width: 4.43rem;
+	height: 0.65rem;
+	background-color: #007aff;
+    border-radius: 0.04rem;
+    font-size: 0.27rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.32rem;
+	letter-spacing: 0.01rem;
+    color: #ffffff;
+    border: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    font-family: "Alibaba-PuHuiTi-Bold";
+}

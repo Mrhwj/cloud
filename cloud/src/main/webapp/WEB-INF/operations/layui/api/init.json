@@ -1,0 +1,158 @@
+{
+    "clearInfo": {
+        "clearUrl": "api/clear.json"
+    },
+    "homeInfo": {
+        "title": "首页",
+        "icon": "fa fa-home",
+        "href": "../manage/member/memberBasic.do"
+    },
+    "logoInfo": {
+        "title": "山东莘县智慧党建",
+        "image": "layui/images/logo.png",
+        "href": "http://www.baidu.com",
+        "target": "_blank"
+    },
+    "menuInfo": {
+        "functionMenu": {
+            "title": "功能菜单",
+            "icon": "fa fa-address-book",
+            "child": [{
+                    "title": "党员信息",
+                    "href": "",
+                    "icon": "fa fa-address-card-o",
+                    "target": "_self",
+                    "child": [{
+                            "title": "密码修改",
+                            "href": "../manage/info/changePassword.do",
+                            "icon": "fa fa-list-alt",
+                            "target": "_self"
+                        },
+                        {
+                            "title": "党员信息管理",
+                            "href": "../manage/info/memberInfoView.do",
+                            "icon": "fa fa-list-alt",
+                            "target": "_self"
+                        }
+                    ]
+                },
+                {
+                    "title": "志愿服务",
+                    "href": "page/menu.html",
+                    "icon": "fa fa-slideshare",
+                    "target": "_self",
+                    "child": [{
+                        "title": "微心愿",
+                        "href": "../manage/wish/wishListPage.do",
+                        "icon": "fa fa-list-alt",
+                        "target": "_self"
+                    },
+                    {
+                        "title": "活动预告",
+                        "href": "../manage/volunteerArticle/articleView.do?id=61",
+                        "icon": "fa fa-list-alt",
+                        "target": "_self"
+                    },
+                    {
+                        "title": "服务动态",
+                        "href": "../manage/volunteerArticle/dynamicView.do?id=62",
+                        "icon": "fa fa-list-alt",
+                        "target": "_self"
+                    }
+                ]
+                },
+                {
+                    "title": "党务管理",
+                    "href": "page/setting.html",
+                    "icon": "fa fa-gears",
+                    "target": "_self",
+                    "child": [{
+                        "title": "党员列表",
+                        "href": "../manage/member/memberList.do",
+                        "icon": "fa fa-list-alt",
+                        "target": "_self"
+                    },
+                    {
+                        "title": "党组织活动发布",
+                        "href": "../manage/article/articleList.do?classId=24",
+                        "icon": "fa fa-list-alt",
+                        "target": "_self"
+                    },
+                    {
+                        "title": "党组织维护",
+                        "href": "../manage/group/partyGroupBasic.do",
+                        "icon": "fa fa-list-alt",
+                        "target": "_self"
+                    }
+                ]
+                },
+                {
+                    "title": "积分领取",
+                    "href": "",
+                    "icon": "fa fa-database",
+                    "target": "_self",
+                    "child": [{
+                            "title": "支部活动积分领取",
+                            "href": "../manage/getscore/actionScore.do",
+                            "icon": "fa fa-list-alt",
+                            "target": "_self"
+                        },
+                        {
+                            "title": "党委活动积分领取",
+                            "href": "../manage/getscore/dwArticle.do",
+                            "icon": "fa fa-list-alt",
+                            "target": "_self"
+                        }
+                    ]
+                },
+                {
+                    "title": "消息中心",
+                    "href": "",
+                    "icon": "fa fa-envelope-o",
+                    "target": "_self",
+                    "child": [{
+                            "title": "消息列表",
+                            "href": "../manage/sms/SmsView.do",
+                            "icon": "fa fa-list-alt",
+                            "target": "_blank"
+                        },
+                        {
+                            "title": "常见问题列表",
+                            "href": "",
+                            "icon": "fa fa-list-alt",
+                            "target": "_blank"
+                        }
+                    ]
+                }
+            ]
+        },
+        "partyOrgCheck": {
+            "title": "党组织查看",
+            "icon": "fa fa-lemon-o",
+            "child": [{
+                    "title": "肖屯村党支部",
+                    "href": "../manage/group/groupView.do?groupId=8",
+                    "icon": "fa fa-list-alt",
+                    "target": "_self"
+                }
+            ]
+        },
+        "partyWorkRelevant": {
+            "title": "党务相关内容发布",
+            "icon": "fa fa-slideshare",
+            "child": [{
+                    "title": "党规党章",
+                    "href": "../manage/publish/viewpage.do?classId=193",
+                    "icon": "fa fa-list-alt",
+                    "target": "_self"
+                },
+                {
+                    "title": "党务新闻",
+                    "href": "../manage/publish/viewpage.do?classId=194",
+                    "icon": "fa fa-list-alt",
+                    "target": "_self"
+                }
+            ]
+        }
+    }
+}

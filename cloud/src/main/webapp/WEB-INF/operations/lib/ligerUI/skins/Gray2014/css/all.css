@@ -1,0 +1,24 @@
+@import url("common.css");
+@import url("tab.css");
+@import url("layout.css");
+@import url("dialog.css");
+@import url("form.css");
+@import url("grid.css"); 
+/*重置日期选择器 start*/
+			.l-box-dateeditor{border:1px solid #c5c5c5;}
+			.l-box-dateeditor-header-btn{background:none;}
+			.l-box-dateeditor-toolbar{border-top:1px solid #c5c5c5;}
+			.l-box-dateeditor-body{border:none;border-top:1px solid #c5c5c5;}
+			.l-box-dateeditor{-moz-box-shadow:0 3px 6px rgba(0,0,0,.3);-ms-box-shadow:0 3px 6px rgba(0,0,0,.3);-o-box-shadow:0 3px 6px rgba(0,0,0,.3);-webkit-box-shadow:0 3px 6px rgba(0,0,0,.3);box-shadow:0 3px 6px rgba(0,0,0,.3);}
+			.l-box-dateeditor-header{background:none;}
+			.l-box-dateeditor-header-text,.l-box-dateeditor-header-text a{color:#444;}
+			.l-box-dateeditor-toolbar{background:none;}
+			.l-box-dateeditor-body thead td{border-bottom:none;}
+			.l-button{border:1px solid #c5c5c5;background:#fff;}
+			.l-box-dateeditor-header-prevyear span{background:url(../../../../images/icon-first.gif) no-repeat center;}
+			.l-box-dateeditor-header-prevmonth span{background:url(../../../../images/icon-prev.gif) no-repeat center;}
+			.l-box-dateeditor-header-nextmonth span{background:url(../../../../images/icon-next.gif) no-repeat center;}
+			.l-box-dateeditor-header-nextyear span{background:url(../../../../images/icon-last.gif) no-repeat center;}
+			.l-box-dateeditor-body thead td{background:#dad9d9;}
+			.l-box-dateeditor-body tbody td.l-box-dateeditor-today{background-color:#FFBD69;}
+/*重置日期选择器 end*/

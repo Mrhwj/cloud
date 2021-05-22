@@ -1,0 +1,75 @@
+body {margin:15px 15px 15px 15px;background:#f2f2f2;}
+.layuimini-container {border:1px solid #f2f2f2;border-radius:5px;background-color:#ffffff}
+.layuimini-main {margin:10px 10px 10px 10px;}
+
+/**韫囧懎锝炵痪銏㈠仯 */
+.layuimini-form>.layui-form-item>.required:after {content:'*';color:red;position:absolute;margin-left:4px;font-weight:bold;line-height:1.8em;top:6px;right:5px;}
+.layuimini-form>.layui-form-item>.layui-form-label {width:120px !important;}
+.layuimini-form>.layui-form-item>.layui-input-block {margin-left:150px !important;}
+.layuimini-form>.layui-form-item>.layui-input-block >tip {display:inline-block;margin-top:10px;line-height:10px;font-size:10px;color:#a29c9c;}
+
+@media screen and (min-width:768px) {
+    /**閼奉亜鐣炬稊澶嬬泊閸斻劍娼弽宄扮础 */
+    ::-webkit-scrollbar {width: 4px;height: 4px}
+    ::-webkit-scrollbar-track {background-color: transparent;-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius: 2em;}
+    ::-webkit-scrollbar-thumb {background-color: #9c9da0;-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius: 2em}
+}
+
+/**閹兼粎鍌ㄥ锟�*/
+.layuimini-container .table-search-fieldset {margin: 0;border: 1px solid #e6e6e6;padding: 10px 20px 5px 20px;color: #6b6b6b;}
+
+.layui-row-top {
+    margin-top: 10px;
+}
+
+.layui-form .layui-form-item{
+    padding-right: 4%;
+}
+
+.layui-form .layui-input-block.required:after,.layui-form .layui-input-inline-block.required:after{
+    position: absolute;
+    right:-10px;
+    top:0px;
+    height: 40px;
+    line-height: 40px;
+    content: "*";
+    color: red;
+    font-size: 18px;
+    z-index: 99;
+}
+.layui-btn-align-r{text-align: right;}
+.layui-hide {
+    display: none;
+}
+
+.layui-table.layui-table-align-m td,
+.layui-table.layui-table-align-m th {
+    text-align: center;
+}
+
+.layui-table.layui-table-align-m .td_align_l {
+    text-align: left;
+}
+
+.layui-table-align-m .nowrap td {
+    white-space: nowrap;
+}
+
+.layui-input-inline-block {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    vertical-align:middle;
+}
+.layui-form-item-w1 .layui-form-label{width: 100px;}
+.layui-form-item-w1 .layui-input-block{margin-left: 130px;}
+.layui-input-inline-block.layui-placholder{width: 4%;}
+.layui-form-table .layui-table tbody tr:hover {
+    background-color: transparent;
+}
+.layui-align-center{text-align: center;}
+.layui-table-cell .layui-form-checkbox[lay-skin=primary]{
+    top:0px;
+}
+.l-text.l-text-combobox{height:36px;line-height:36px;}

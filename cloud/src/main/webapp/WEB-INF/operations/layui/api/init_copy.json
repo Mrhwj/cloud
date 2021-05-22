@@ -1,0 +1,212 @@
+{
+    "clearInfo": {
+        "clearUrl": "api/clear.json"
+    },
+    "homeInfo": {
+        "title": "首页",
+        "icon": "fa fa-home",
+        "href": "/manage/subwin/menu_2/UserInfoView.aspx"
+    },
+    "logoInfo": {
+        "title": "智慧睦邻",
+        "image": "images/ic_logo.png",
+        "href": "/version2020/index.aspx"
+    },
+    "menuInfo": {
+        "memberInfo": {
+            "title": "党员信息",
+            "icon": "fa fa-address-book",
+            "child": [{
+                "title": "党员信息管理",
+                "href": "/manage/subwin/menu_2/UserInfoView.aspx",
+                "target": "_self",
+                "icon": "fa fa-file-text"
+            }, {
+                "title": "相关信息查看",
+                "href": "/manage/subwin/menu_2/UserInfoDetail.aspx",
+                "target": "_self",
+                "icon": "fa fa-list-alt"
+            }, {
+                "title": "密码修改",
+                "href": "/manage/subwin/menu_2/passwordAdmin.aspx?id=0&type=3",
+                "target": "_self",
+                "icon": "fa fa-key"
+            }]
+        },
+        "infoSubmitted": {
+            "title": "信息报送",
+            "icon": "fa fa-lemon-o",
+            "child": [{
+                "title": "信息报送",
+                "href": "/manage/subwin/menu_11/InfoSubmission.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "报送统计",
+                "href": "/manage/subwin/menu_11/EnrollStatistical.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "征稿专题管理",
+                "href": "/manage/subwin/menu_8/special_list.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "征稿信息上报",
+                "href": "/manage/subwin/menu_2/SpecialList.aspx",
+                "target": "_self",
+                "icon": null
+            }]
+        },
+        "volunteerService": {
+            "title": "志愿服务",
+            "icon": "fa fa-slideshare",
+            "child": [{
+                "title": "<font color='blue'>志愿相关内容发布</font>",
+                "href": "/manage/subwin/menu_8/List.aspx?blockId=2",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "淘爱心",
+                "href": "/manage/subwin/menu_3/TAX_List.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "服务队管理",
+                "href": "/manage/subwin/menu_4/ArticleList.aspx?lmid=[*id*]",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "评价管理",
+                "href": "/manage/subwin/menu_3/DjPj.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "居住地报到统计",
+                "href": "/manage/subwin/menu_3/ZZDY_List.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "支部报到统计",
+                "href": "/manage/subwin/menu_3/ZBZZDY_List.aspx",
+                "target": "_self",
+                "icon": null
+            }]
+        },
+        "partyWorkManage": {
+            "title": "党务管理",
+            "icon": "fa fa-address-card-o",
+            "child": [{
+                "title": "党员列表",
+                "href": "/manage/subwin/menu_2/MemberList.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "<font color='red'>党务相关内容发布</font>",
+                "href": "/manage/subwin/menu_8/List.aspx?blockId=1",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "下属活动开展情况",
+                "href": "/manage/subwin/menu_2/Group_Article.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "月平均参与率",
+                "href": "/manage/subwin/menu_2/MonthAverage.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "党徽领取",
+                "href": "/manage/subwin/menu_4/PartyEmblemList.aspx",
+                "target": "_self",
+                "icon": null
+            }]
+        },
+        "studyPlat": {
+            "title": "学习平台",
+            "icon": "fa fa-stumbleupon-circle",
+            "child": [{
+                "title": "学习平台",
+                "href": "/manage/subwin/menu_7/studyPlat.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "学习专题",
+                "href": "/manage/subwin/menu_7/special_list.aspx",
+                "target": "_self",
+                "icon": null
+            }]
+        },
+        "messageCenter": {
+            "title": "消息中心",
+            "icon": "fa fa-envelope-o",
+            "child": [{
+                "title": "常见问题列表",
+                "href": "/manage/subwin/menu_6/ProblemList.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "积分众筹",
+                "href": "/manage/subwin/menu_8/CrowdFunding.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "发展党员列表",
+                "href": "/manage/subwin/menu_12/ActiveList.aspx",
+                "target": "_self",
+                "icon": null
+            }]
+        },
+        "systemConfig": {
+            "title": "系统维护",
+            "icon": "fa fa-stumbleupon-circle",
+            "child": [{
+                "title": "菜单管理",
+                "href": "/manage/subwin/menu_7/class_list.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "栏目管理",
+                "href": "/manage/subwin/menu_8/class_list.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "积分类型管理",
+                "href": "/manage/subwin/menu_7/GroupType.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "管理员维护",
+                "href": "/manage/subwin/menu_7/GroupAdmin.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "活动标记配置",
+                "href": "/manage/subwin/menu_7/TagsList.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "志愿服务配置",
+                "href": "/manage/subwin/menu_7/ServeList.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "附加积分配置",
+                "href": "/manage/subwin/menu_8/MemberPointsList.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "问卷系统",
+                "href": "/manage/subwin/menu_9/PaperList.aspx",
+                "target": "_self",
+                "icon": null
+            }, {
+                "title": "友情链接配置",
+                "href": "/manage/subwin/menu_8/FriendlyLink_list.aspx",
+                "target": "_self",
+                "icon": null
+            }]
+        }
+    }
+}
