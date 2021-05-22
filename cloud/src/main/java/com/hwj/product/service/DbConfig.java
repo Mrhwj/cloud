@@ -24,12 +24,10 @@ abstract public class DbConfig {
 	// 驱动程序名
 	public String driver = "com.mysql.jdbc.Driver";
 	// URL指向要访问的数据库名
-	public String url = "jdbc:mysql://192.168.0.3/dhdjy";
-	// public String url = "jdbc:mysql://106.15.91.210/djy";
-	// public String url = "jdbc:mysql://192.168.1.6/djy";
+	public String url = "jdbc:mysql://192.168.0.102/cloud";
 
 	// MySQL配置时的用户名
-	public String user = "sa";
+	public String user = "hwj";
 	// MySQL配置时的密码
 	public String password = "abc123";
 

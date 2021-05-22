@@ -13,16 +13,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
+@Controller
 public class BaseController {
+	
+	@Resource
+	HttpServletRequest request;
+	
 	public Properties properties;
 	
 	public int PageIndex = 1;
 	public int PageSize = 10;
 	public String deleteUids = "";
 	
-
+	String keyStr="86R8k53kfb52768";
 	
 	/*
 	@ModelAttribute

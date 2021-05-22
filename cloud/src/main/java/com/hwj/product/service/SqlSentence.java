@@ -7,12 +7,7 @@ import java.sql.Date;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
  
-/**
- * @author tqf
- * @Description 根据对象生成sql语句
- * @Version 1.0
- * @since 2020-09-09 16:58
- */
+
 public class SqlSentence {
     /**
      * 生成插入语句
