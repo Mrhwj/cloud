@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>秀洲企业用工管理平台</title>
+        <title>管理平台</title>
         <meta name="renderer" content="webkit">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta http-equiv="Access-Control-Allow-Origin" content="*">

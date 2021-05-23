@@ -188,8 +188,8 @@
     <form class="layui-form" action="">
         <div class="loginForm">
             <div class="pc_header">
-                <span class="inline-block sys_name">稳定用工激励平台管理</span>
-                <span class="inline-block sys_desc">—— 嘉兴市秀洲区</span>
+                <span class="inline-block sys_name">货物管理系统</span>
+                <span class="inline-block sys_desc">—— 货物盘点</span>
             </div>
             <div class="pc_content">
                 <div class="pc_form">
@@ -197,7 +197,7 @@
                         <img src="../images/i_login_form_left_side_bg.png" alt="" />
                     </div>
                     <div class="pc_form_rightSide">
-                        <h1>欢迎登陆</h1>
+                        <h1>用户登陆</h1>
                         <ul class="i-form">
                             <li>
                                 <input type="text" name="name" placeholder="请输入用户名" autocomplete="off"
@@ -221,42 +221,6 @@
             </div>
         </div>
     </form>
-    <!--img src="../images/loginBg1.png" alt="" class="bg1">
-    <img src="../images/loginbg2.png" alt="" class="bg2">
-    <div id="container">
-        <div></div>
-        <div class="admin-login-background">
-            <div class="admin-header">
-                <span>秀洲企业用工管理平台</span>
-            </div>
-            <div class="loginPanel">
-                <div class="loginPanelImg"><img src="../images/loginPanelImg.png" alt=""></div>
-                <form class="layui-form" action="">
-                    <div style="font-size: 15px;font-weight: bold; margin-bottom: 30px;">用户登录</div>
-                    <div>
-                        <img class="formImg" src="../images/ic_username.png" alt="">
-                        <input type="text" name="name" placeholder="请输入用户名" autocomplete="off"
-                            class="layui-input admin-input admin-input-username" >
-                    </div>
-                    <div>
-                        <img class="formImg" src="../images/ic_password.png" alt="">
-                        <input type="password" name="pwd" placeholder="请输入密码" autocomplete="off"
-                            class="layui-input admin-input" >
-                    </div>
-                    <div>
-                        <img class="formImg" src="../images/ic_code.png" alt="">
-                        <input type="text" name="code" id="code" placeholder="请输入验证码" autocomplete="off"
-                            class="layui-input admin-input admin-input-verify" value="">
-                        <img class="admin-captcha" id="captchaPic" width="90" height="30" src="./captcha.do">
-
-                    </div>
-                    <button style="margin-left: 42px;" class="layui-btn admin-button" lay-submit=""
-                        lay-filter="login"></button>
-                </form>
-            </div>
-
-        </div>
-    </div-->
     <script src="../lib/layui-v2.5.5/layui.js" charset="utf-8"></script>
     <script src="../js/v_basic.js" charset="utf-8"></script>
     <script>

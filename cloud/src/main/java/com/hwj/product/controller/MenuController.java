@@ -115,7 +115,7 @@ public class MenuController extends BaseController {
 			map2.put("href", "welcome.do");
 			
 			Map<String, Object> map3 = new HashMap<>();
-			map3.put("title", "秀洲企业用工管理平台");
+			map3.put("title", "生产管理平台");
 			map3.put("image", "");
 			map3.put("href", "");
 			
